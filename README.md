@@ -4,13 +4,13 @@ A comparison of technologies in a typical microservice scenario, focusing on res
 
 ## Scenario
 
-A common scenario for microservices is that they orchestrate across number of backend services. Often those services are legacy, with high latency. The goal of this exercise is to highlight the differences between several tech choices in terms of how well they perform in that situation.
+A common scenario for microservices is that they orchestrate a number of backend services. Often those services are legacy with high latency. The goal of this exercise is to highlight the differences between several tech choices in terms of how well they perform in that situation.
 
-We're focusing on a RESTful HTTP API, which for each incoming request, makes a small number of upstream API requests, collects data from the responses and responds to the original request. The majority of the time taken to respond is just waiting for responses from upstream requests. Therefore the performance is IO-bound. We believe this is a fairly typical scenario in microservice architectures in large-scale enterprise systems.
+We're focusing on a RESTful HTTP API, which for each incoming request, makes a small number of upstream API requests, collects data from the responses and responds to the original request. The majority of the time taken to respond is waiting for responses from upstream requests. Therefore the performance is IO-bound. We believe this is a fairly typical scenario in microservice architectures in large-scale enterprise systems.
 
 ## Performance measures
 
-We're assuming these services run under cluster orchestration (e.g. Kubernetes) and inside linux containers (e.g. Debian in Docker). On that basis we're focusing on:
+We're assuming these services run under cluster orchestration (e.g. Kubernetes) and inside Linux containers (e.g. Debian in Docker). On that basis we're focusing on:
 
 - throughput under a certain level of resource constraints (CPU & RAM)
 - resource consumption required to handle a fixed high throughput
@@ -52,7 +52,7 @@ The back-end service will have excess resources available to it.
 
 ## TODO list
 
-- API contract between load source and SUT (`GET /api`, application/json)
+- API contract between load source and service under test (SUT) (`GET /api`, application/json)
 - API contract between SUT and simulated legacy back-end (SLBE) (merged output from 3 upstream responses)
 - Build SLBE
 - Deploy SLBE and load test to find capacity limits (number of concurrent requests)
