@@ -8,4 +8,5 @@ edition = "2018"
 
 [dependencies]
 async-std = { version = "1.6.3", features = ["attributes", "unstable"] }
+rand = { version = "0.7.3", features = [ "small_rng" ] }
 tide = "0.13.0"
