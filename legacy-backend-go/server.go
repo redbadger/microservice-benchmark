@@ -3,8 +3,20 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"math/rand"
 	"net/http"
+	"time"
 )
+
+func handler(data []byte) func(http.ResponseWriter, *http.Request) {
+	return func(w http.ResponseWriter, r *http.Request) {
+		pause := int64((rand.NormFloat64()*0.3 + 2) * 1_000_000_000)
+		time.Sleep(time.Duration(pause))
+
+		w.Header()["Content-Type"] = []string{"application/json"}
+		w.Write(data)
+	}
+}
 
 func main() {
 	customer, err := ioutil.ReadFile("data/customer.json")
@@ -25,20 +37,9 @@ func main() {
 		return
 	}
 
-	http.HandleFunc("/customer", func(w http.ResponseWriter, r *http.Request) {
-		w.Header()["Content-Type"] = []string{"application/json"}
-		w.Write(customer)
-	})
-
-	http.HandleFunc("/accounts", func(w http.ResponseWriter, r *http.Request) {
-		w.Header()["Content-Type"] = []string{"application/json"}
-		w.Write(accounts)
-	})
-
-	http.HandleFunc("/cards", func(w http.ResponseWriter, r *http.Request) {
-		w.Header()["Content-Type"] = []string{"application/json"}
-		w.Write(cards)
-	})
+	http.HandleFunc("/customer", handler(customer))
+	http.HandleFunc("/accounts", handler(accounts))
+	http.HandleFunc("/cards", handler(cards))
 
 	fmt.Printf("Listening on 3000\n")
 	http.ListenAndServe(":3000", nil)
