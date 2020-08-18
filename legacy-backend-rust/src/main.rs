@@ -20,7 +20,12 @@ struct State {
 
 async fn handle_request(req: Request<State>) -> tide::Result {
     let state = req.state();
+
     let data_type: String = req.param("data_type")?;
+    let data = state
+        .data
+        .get(data_type.as_str())
+        .ok_or_else(|| Error::from_str(StatusCode::NotFound, "no data"))?;
 
     let delay = {
         let arc = state.rng.clone();
@@ -28,11 +33,6 @@ async fn handle_request(req: Request<State>) -> tide::Result {
         rng.sample::<f64, _>(state.normal) as u64
     };
     task::sleep(Duration::from_millis(delay)).await;
-
-    let data = state
-        .data
-        .get(data_type.as_str())
-        .ok_or_else(|| Error::from_str(StatusCode::NotFound, "no data"))?;
 
     let mut res = Response::new(200);
     res.set_body(Body::from_bytes(data.clone()));

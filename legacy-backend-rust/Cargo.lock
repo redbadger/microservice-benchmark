@@ -769,7 +769,6 @@ dependencies = [
  "async-std",
  "rand",
  "rand_distr",
- "serde_json",
  "tide",
 ]
 
