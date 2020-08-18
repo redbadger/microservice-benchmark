@@ -7,6 +7,7 @@ use rand::{rngs::SmallRng, Rng, SeedableRng};
 use serde_json::Value;
 use std::time::Duration;
 use tide::{http::mime, Request, Response};
+
 #[derive(Clone)]
 struct State {
     data: Vec<Value>,
