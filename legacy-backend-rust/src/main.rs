@@ -1,6 +1,9 @@
-use async_std::{sync::Mutex, task};
+use async_std::{
+    sync::{Arc, Mutex},
+    task,
+};
 use rand::{rngs::SmallRng, Rng, SeedableRng};
-use std::{sync::Arc, time::Duration};
+use std::time::Duration;
 use tide::{http::mime, Request, Response};
 
 #[derive(Clone)]
@@ -28,7 +31,7 @@ async fn handle_request(req: Request<State>) -> tide::Result {
 #[async_std::main]
 async fn main() -> Result<(), std::io::Error> {
     // tide::log::start();
-    let data = include_str!("../../data/generated-1.json").to_string();
+    let data = include_str!("../data/generated-1.json").to_string();
     let rng = Arc::new(Mutex::new(SmallRng::from_entropy()));
     let mut app = tide::with_state(State { data, rng });
     app.at("/").get(handle_request);
