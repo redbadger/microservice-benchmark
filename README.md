@@ -63,3 +63,20 @@ The back-end service will have excess resources available to it.
 
 - decent amount of pre-canned JSON in each response (shallow object)
 - SUT takes 3 upstream responses and merges them into one shallow object
+
+### Benchmark legacy backend
+
+```sh
+
+# install drill if not already installed
+cargo install drill
+
+# build and start relevant backend in a Docker container
+(cd legacy-backend-rust && make docker && make docker-run)
+# or...
+(cd legacy-backend-go && make docker && make docker-run)
+
+# run benchmark
+drill --benchmark backend.yaml --stats --quiet
+
+```
