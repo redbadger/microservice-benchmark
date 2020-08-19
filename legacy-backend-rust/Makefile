@@ -1,6 +1,7 @@
 .PHONY: default
 default:
-	cargo run
+	ulimit -n 4096 && \
+		cargo run --release
 
 .PHONY: docker
 docker:
