@@ -56,7 +56,7 @@ async fn main() -> Result<()> {
 
     let mut app = tide::with_state(State { data, rng, normal });
     app.at("/:data_type").get(handle_request);
-    app.listen("127.0.0.1:8080").await?;
+    app.listen("0.0.0.0:3000").await?;
 
     Ok(())
 }
