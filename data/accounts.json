@@ -5,7 +5,7 @@
     "guid": "2ff1233a-9259-465e-b331-05c461c45533",
     "isActive": true,
     "balance": "$2,146.51",
-    "transacton": [
+    "transactions": [
       {
         "amount": 3892,
         "from": "47826322",
@@ -74,7 +74,7 @@
     "guid": "9a898ca3-1e72-471a-b0db-d1f4d225a358",
     "isActive": true,
     "balance": "$3,682.00",
-    "transacton": [
+    "transactions": [
       {
         "amount": 2806,
         "from": "14827780",
@@ -183,7 +183,7 @@
     "guid": "a5483d8c-7134-45cb-ad34-bb517077d6e4",
     "isActive": true,
     "balance": "$3,586.09",
-    "transacton": [
+    "transactions": [
       {
         "amount": 7497,
         "from": "40571347",
