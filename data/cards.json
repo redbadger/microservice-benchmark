@@ -69,7 +69,7 @@
   {
     "_id": "5f3baf3a34f66b8c95ec86e3",
     "isFrozen": false,
-    "cardNumber": 8703477361099912,
+    "cardNumber": "8703477361099912",
     "transactions": [
       {
         "amount": 3001,
@@ -196,7 +196,7 @@
   {
     "_id": "5f3baf3a9b58ee3998fe6217",
     "isFrozen": true,
-    "cardNumber": 1116720923397461,
+    "cardNumber": "1116720923397461",
     "transactions": [
       {
         "amount": 5139,
