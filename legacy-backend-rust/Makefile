@@ -5,7 +5,9 @@ default:
 
 .PHONY: docker
 docker:
-	docker build -t legacy_backend_rust .
+	tar cv --exclude target Dockerfile -C .. legacy-backend-rust data | \
+		docker build - \
+			--tag legacy_backend_rust
 
 .PHONY: docker-run
 docker-run:
