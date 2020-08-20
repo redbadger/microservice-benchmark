@@ -1,0 +1,16 @@
+base: http://localhost:3000
+iterations: 10000
+concurrency: 1500
+
+plan:
+  - name: Fetch accounts
+    request:
+      url: /accounts
+
+  - name: Fetch cards
+    request:
+      url: /cards
+
+  - name: Fetch customer
+    request:
+      url: /customer
