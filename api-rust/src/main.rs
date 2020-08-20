@@ -1,4 +1,5 @@
 use anyhow::Result;
+use serde_json::json;
 use tide::{http::mime, Body, Error, Request, Response, StatusCode};
 
 mod model;
@@ -13,10 +14,16 @@ async fn handle_request(req: Request<State>) -> tide::Result {
         .recv_json()
         .await
         .map_err(|e| Error::from_str(StatusCode::InternalServerError, e))?;
+    let accounts: Vec<model::Account> = surf::get("http://localhost:3000/accounts")
+        .recv_json()
+        .await
+        .map_err(|e| Error::from_str(StatusCode::InternalServerError, e))?;
 
     let mut res = Response::new(200);
     res.set_content_type(mime::JSON);
-    res.set_body(Body::from_json(&cards)?);
+    res.set_body(Body::from_json(
+        &json!({ "cards": cards, "accounts": accounts }),
+    )?);
     Ok(res)
 }
 
