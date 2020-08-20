@@ -19,19 +19,19 @@ func handler(data []byte) func(http.ResponseWriter, *http.Request) {
 }
 
 func main() {
-	customer, err := ioutil.ReadFile("data/customer.json")
+	customer, err := ioutil.ReadFile("../data/customer.json")
 	if err != nil {
 		fmt.Printf("Could not read customer file: %s", err)
 		return
 	}
 
-	accounts, err := ioutil.ReadFile("data/accounts.json")
+	accounts, err := ioutil.ReadFile("../data/accounts.json")
 	if err != nil {
 		fmt.Printf("Could not read accounts file: %s", err)
 		return
 	}
 
-	cards, err := ioutil.ReadFile("data/cards.json")
+	cards, err := ioutil.ReadFile("../data/cards.json")
 	if err != nil {
 		fmt.Printf("Could not read cards file: %s", err)
 		return

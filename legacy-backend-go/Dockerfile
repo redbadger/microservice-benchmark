@@ -1,6 +1,6 @@
 FROM golang:1.15 AS build
 
-COPY server.go .
+COPY legacy-backend-go/server.go ./
 
 RUN go build server.go
 
@@ -16,10 +16,10 @@ USER svc
 
 COPY --chown=svc --from=build \
     /go/server \
-    /legacy-backend-go
-COPY data ./data
+    /app/legacy-backend-go
+COPY data /data
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 EXPOSE 3000
-CMD ["/legacy-backend-go"]
+CMD ["/app/legacy-backend-go"]
