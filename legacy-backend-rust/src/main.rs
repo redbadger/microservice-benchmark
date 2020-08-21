@@ -42,6 +42,7 @@ async fn handle_request(req: Request<State>) -> tide::Result {
 #[async_std::main]
 async fn main() -> Result<()> {
     // tide::log::start();
+
     let accounts = include_bytes!("../../data/accounts.json").to_vec();
     let cards = include_bytes!("../../data/cards.json").to_vec();
     let customer = include_bytes!("../../data/customer.json").to_vec();

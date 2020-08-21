@@ -1,23 +1,41 @@
 use anyhow::Result;
-
-use tide::{http::mime, Body, Error, Request, Response, StatusCode};
+use async_std::task;
+use tide::{http::mime, Body, Request, Response};
 
 mod model;
 
 #[derive(Clone)]
-struct State {}
+struct State {
+    client: surf::Client,
+}
+
+async fn get<T>(url: &str, client: surf::Client) -> tide::Result<T>
+where
+    T: tide::convert::DeserializeOwned,
+{
+    let req: surf::Request = surf::get(url).build();
+    let x: T = client.recv_json(req).await?;
+    Ok(x)
+}
 
 async fn handle_request(req: Request<State>) -> tide::Result {
-    let _state = req.state();
+    let client: surf::Client = req.state().client.clone();
 
-    let get_cards = surf::get("http://localhost:3000/cards").recv_json::<Vec<model::Card>>();
-    let get_accounts =
-        surf::get("http://localhost:3000/accounts").recv_json::<Vec<model::Account>>();
-    let get_customer = surf::get("http://localhost:3000/customer").recv_json::<model::Customer>();
+    let get_accounts = task::spawn(get::<Vec<model::Account>>(
+        "http://localhost:3000/accounts",
+        client.clone(),
+    ));
+    let get_cards = task::spawn(get::<Vec<model::Card>>(
+        "http://localhost:3000/cards",
+        client.clone(),
+    ));
+    let get_customer = task::spawn(get::<model::Customer>(
+        "http://localhost:3000/customer",
+        client,
+    ));
 
-    let (cards, accounts, mut customer) = futures::try_join!(get_cards, get_accounts, get_customer)
-        .map_err(|e| Error::from_str(StatusCode::InternalServerError, e))?;
-
+    let (accounts, cards, mut customer) =
+        futures::try_join!(get_accounts, get_cards, get_customer)?;
     customer.accounts = Some(accounts);
     customer.cards = Some(cards);
 
@@ -29,9 +47,11 @@ async fn handle_request(req: Request<State>) -> tide::Result {
 
 #[async_std::main]
 async fn main() -> Result<()> {
-    tide::log::start();
+    // tide::log::start();
 
-    let mut app = tide::with_state(State {});
+    let mut app = tide::with_state(State {
+        client: surf::Client::new(),
+    });
     app.at("/").get(handle_request);
     app.listen("0.0.0.0:8000").await?;
 
