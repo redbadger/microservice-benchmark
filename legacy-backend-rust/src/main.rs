@@ -6,7 +6,7 @@ use async_std::{
 use rand::{rngs::SmallRng, Rng, SeedableRng};
 use rand_distr::Normal;
 use std::{collections::HashMap, time::Duration};
-use tide::{http::mime, Body, Error, Request, Response, StatusCode};
+use tide::{http::mime, log, Body, Error, Request, Response, StatusCode};
 
 const DELAY_SECS_MEAN: f64 = 2.0;
 const DELAY_STD_DEV: f64 = 0.3;
@@ -41,7 +41,7 @@ async fn handle_request(req: Request<State>) -> tide::Result {
 }
 #[async_std::main]
 async fn main() -> Result<()> {
-    // tide::log::start();
+    tide::log::with_level(log::LevelFilter::Error);
 
     let accounts = include_bytes!("../../data/accounts.json").to_vec();
     let cards = include_bytes!("../../data/cards.json").to_vec();

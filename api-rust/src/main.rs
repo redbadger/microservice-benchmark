@@ -1,6 +1,5 @@
-use anyhow::Result;
 use async_std::task;
-use tide::{http::mime, Body, Request, Response};
+use tide::{convert::DeserializeOwned, http::mime, log, Body, Request, Response, Result};
 
 mod model;
 
@@ -9,35 +8,32 @@ struct State {
     client: surf::Client,
 }
 
-async fn get<T>(url: &str, client: surf::Client) -> tide::Result<T>
+async fn get<T>(url: &str, client: surf::Client) -> Result<T>
 where
-    T: tide::convert::DeserializeOwned,
+    T: DeserializeOwned,
 {
-    let req: surf::Request = surf::get(url).build();
-    let x: T = client.recv_json(req).await?;
+    let x: T = client.recv_json(surf::get(url)).await?;
     Ok(x)
 }
 
-async fn handle_request(req: Request<State>) -> tide::Result {
-    let client: surf::Client = req.state().client.clone();
+async fn handle_request(req: Request<State>) -> Result {
+    let state = req.state();
 
-    let get_accounts = task::spawn(get::<Vec<model::Account>>(
+    let accounts = task::spawn(get::<Vec<model::Account>>(
         "http://localhost:3000/accounts",
-        client.clone(),
+        state.client.clone(),
     ));
-    let get_cards = task::spawn(get::<Vec<model::Card>>(
+    let cards = task::spawn(get::<Vec<model::Card>>(
         "http://localhost:3000/cards",
-        client.clone(),
+        state.client.clone(),
     ));
-    let get_customer = task::spawn(get::<model::Customer>(
+    let customer = task::spawn(get::<model::Customer>(
         "http://localhost:3000/customer",
-        client,
+        state.client.clone(),
     ));
-
-    let (accounts, cards, mut customer) =
-        futures::try_join!(get_accounts, get_cards, get_customer)?;
-    customer.accounts = Some(accounts);
-    customer.cards = Some(cards);
+    let mut customer = customer.await?;
+    customer.accounts = Some(accounts.await?);
+    customer.cards = Some(cards.await?);
 
     let mut res = Response::new(200);
     res.set_content_type(mime::JSON);
@@ -47,7 +43,7 @@ async fn handle_request(req: Request<State>) -> tide::Result {
 
 #[async_std::main]
 async fn main() -> Result<()> {
-    // tide::log::start();
+    tide::log::with_level(log::LevelFilter::Error);
 
     let mut app = tide::with_state(State {
         client: surf::Client::new(),
