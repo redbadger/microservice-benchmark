@@ -1,6 +1,6 @@
 base: http://localhost:8000
 iterations: 5000
-concurrency: 200
+concurrency: 400
 
 plan:
   - name: Fetch

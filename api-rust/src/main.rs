@@ -1,18 +1,20 @@
 use async_std::task;
+use isahc::{config::VersionNegotiation, prelude::*};
+use std::{sync::Arc, time::Duration};
 use tide::{convert::DeserializeOwned, http::mime, log, Body, Request, Response, Result};
 
 mod model;
 
 #[derive(Clone)]
 struct State {
-    client: surf::Client,
+    client: Arc<HttpClient>,
 }
 
-async fn get<T>(url: &str, client: surf::Client) -> Result<T>
+async fn get<T>(url: &str, client: Arc<HttpClient>) -> Result<T>
 where
     T: DeserializeOwned,
 {
-    let x: T = client.recv_json(surf::get(url)).await?;
+    let x: T = client.get_async(url).await?.json()?;
     Ok(x)
 }
 
@@ -44,10 +46,13 @@ async fn handle_request(req: Request<State>) -> Result {
 #[async_std::main]
 async fn main() -> Result<()> {
     tide::log::with_level(log::LevelFilter::Error);
-
-    let mut app = tide::with_state(State {
-        client: surf::Client::new(),
-    });
+    let client = Arc::new(
+        HttpClient::builder()
+            .version_negotiation(VersionNegotiation::http11())
+            .timeout(Duration::from_secs(20))
+            .build()?,
+    );
+    let mut app = tide::with_state(State { client });
     app.at("/").get(handle_request);
     app.listen("0.0.0.0:8000").await?;
 
