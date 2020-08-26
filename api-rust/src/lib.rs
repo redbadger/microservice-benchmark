@@ -64,6 +64,7 @@ pub async fn create_app(
         url_cards,
     });
     app.at("/").get(handle_request);
+    app.at("/healthz").get(|_| async { Ok(Response::new(204)) });
 
     Ok(app)
 }

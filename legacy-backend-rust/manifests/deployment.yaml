@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: legacy-backend-rust
+  labels:
+    app: legacy-backend-rust
+spec:
+  selector:
+    matchLabels:
+      app: legacy-backend-rust
+  template:
+    metadata:
+      labels:
+        app: legacy-backend-rust
+    spec:
+      containers:
+        - name: legacy-backend-rust
+          image: legacy_backend_rust
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "1"
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
+            initialDelaySeconds: 2
+            periodSeconds: 10
+            timeoutSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
+            initialDelaySeconds: 2
+            periodSeconds: 20
+            timeoutSeconds: 10
