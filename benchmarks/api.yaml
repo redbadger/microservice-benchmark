@@ -1,6 +1,6 @@
 base: http://localhost/api-rust
-iterations: 5000
-concurrency: 400
+iterations: 10000
+concurrency: 200
 
 plan:
   - name: Fetch
