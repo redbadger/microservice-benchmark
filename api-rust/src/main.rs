@@ -9,21 +9,21 @@ pub struct Config {
     pub port: u32,
     #[structopt(
         long,
-        env = "URL_ACCOUNTS",
+        env = "API_ACCOUNTS",
         parse(try_from_str = str::parse),
         default_value = "http://localhost:3000/accounts"
     )]
     url_accounts: Uri,
     #[structopt(
         long,
-        env = "URL_CARDS",
+        env = "API_CARDS",
         parse(try_from_str = str::parse),
         default_value = "http://localhost:3000/cards"
     )]
     url_cards: Uri,
     #[structopt(
         long,
-        env = "URL_CUSTOMER",
+        env = "API_CUSTOMER",
         parse(try_from_str = str::parse),
         default_value = "http://localhost:3000/customer"
     )]

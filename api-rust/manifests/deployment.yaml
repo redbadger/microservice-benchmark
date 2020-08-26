@@ -21,11 +21,11 @@ spec:
             - containerPort: 8000
           env:
             - name: API_ACCOUNTS
-              value: http://legacy-backend-rust.legacy-backend-rust.cluster.svc.local/accounts
+              value: http://legacy-backend-rust.legacy-backend-rust/accounts
             - name: API_CARDS
-              value: http://legacy-backend-rust.legacy-backend-rust.cluster.svc.local/cards
+              value: http://legacy-backend-rust.legacy-backend-rust/cards
             - name: API_CUSTOMER
-              value: http://legacy-backend-rust.legacy-backend-rust.cluster.svc.local/customer
+              value: http://legacy-backend-rust.legacy-backend-rust/customer
           resources:
             requests:
               memory: "128Mi"
