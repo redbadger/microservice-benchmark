@@ -1,4 +1,4 @@
-FROM rust:1.45 AS build
+FROM rust:1.46 AS build
 
 RUN rustup component add rustfmt clippy
 
