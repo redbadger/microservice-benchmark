@@ -1,12 +1,12 @@
 .PHONY: default
-default: install ## Install legacy-backend-rust
+default: install ## Install legacy-backend-go
 
 .PHONY: install
-install: ## Install legacy-backend-rust
+install: ## Install legacy-backend-go
 	kustomize build . | kubectl apply -f -
 
 .PHONY: delete
-delete: ## Remove legacy-backend-rust
+delete: ## Remove legacy-backend-go
 	kustomize build . | kubectl delete -f - --ignore-not-found || true
 
 .PHONY: help
