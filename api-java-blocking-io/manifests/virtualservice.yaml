@@ -1,0 +1,22 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: api-java-blocking
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - istio-system/ingressgateway
+  http:
+    - match:
+        - uri:
+            prefix: "/api-java-blocking/"
+        - uri:
+            prefix: "/api-java-blocking"
+      rewrite:
+        uri: "/"
+      route:
+        - destination:
+            port:
+              number: 80
+            host: api-java-blocking

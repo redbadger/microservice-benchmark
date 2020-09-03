@@ -20,7 +20,7 @@ public class AccountService {
 
     @Async
     public CompletableFuture<Account[]> getAccounts() throws InterruptedException {
-        String accountsResourceUrl = "http://localhost:3000/accounts";
+        String accountsResourceUrl = System.getenv("API_ACCOUNTS");
         ResponseEntity<Account[]> response = restTemplate.getForEntity(accountsResourceUrl, Account[].class);
         Account[] accounts = response.getBody();
 

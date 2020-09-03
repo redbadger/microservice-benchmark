@@ -20,7 +20,7 @@ public class CustomerService {
 
     @Async
     public CompletableFuture<Customer> getCustomer() throws InterruptedException {
-        String customerResourceUrl = "http://localhost:3000/customer";
+        String customerResourceUrl = System.getenv("API_CUSTOMER");
         ResponseEntity<Customer> response = restTemplate.getForEntity(customerResourceUrl, Customer.class);
         Customer customer = response.getBody();
 

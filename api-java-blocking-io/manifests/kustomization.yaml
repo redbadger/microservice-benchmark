@@ -1,0 +1,7 @@
+namespace: api-java-blocking
+
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+  - virtualservice.yaml

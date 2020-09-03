@@ -1,11 +1,14 @@
 .PHONY: default
-default:
+default: build
 	ulimit -n 4096 && \
-		mvn clean package && \
 		java -jar ./target/rest-service-0.0.1-SNAPSHOT.jar --server.port=8000
 
+.PHONY: build
+build:
+	mvn clean package
+
 .PHONY: docker
-docker:
+docker: build
 	docker build -t api_java_blocking .
 
 .PHONY: docker-run
