@@ -41,6 +41,10 @@ func main() {
 	http.HandleFunc("/accounts", handler(accounts))
 	http.HandleFunc("/cards", handler(cards))
 
+	http.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusNoContent)
+	})
+
 	fmt.Printf("Listening on 3000\n")
 	http.ListenAndServe(":3000", nil)
 }

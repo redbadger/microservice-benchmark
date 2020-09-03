@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: legacy-backend-go
+  labels:
+    app: legacy-backend-go
+spec:
+  selector:
+    matchLabels:
+      app: legacy-backend-go
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: legacy-backend-go
+    spec:
+      containers:
+        - name: legacy-backend-go
+          image: legacy_backend_go
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "200m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
+            initialDelaySeconds: 2
+            periodSeconds: 10
+            timeoutSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
+            initialDelaySeconds: 2
+            periodSeconds: 20
+            timeoutSeconds: 10
