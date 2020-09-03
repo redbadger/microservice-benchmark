@@ -19,9 +19,9 @@ public class RestServiceApplication {
     @Bean
     public Executor taskExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(2);
-        executor.setMaxPoolSize(2);
-        executor.setQueueCapacity(500);
+        executor.setCorePoolSize(300);
+        // executor.setMaxPoolSize(600);
+        // executor.setQueueCapacity(5000);
         executor.setThreadNamePrefix("Customer-");
         executor.initialize();
         return executor;

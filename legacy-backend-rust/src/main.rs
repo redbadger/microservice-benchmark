@@ -8,8 +8,8 @@ use rand_distr::Normal;
 use std::{collections::HashMap, time::Duration};
 use tide::{http::mime, log, Body, Error, Request, Response, StatusCode};
 
-const DELAY_SECS_MEAN: f64 = 2.0;
-const DELAY_STD_DEV: f64 = 0.3;
+const DELAY_SECS_MEAN: f64 = 0.5;
+const DELAY_STD_DEV: f64 = 0.15;
 
 #[derive(Clone)]
 struct State {

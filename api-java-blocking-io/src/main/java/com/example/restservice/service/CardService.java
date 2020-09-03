@@ -20,7 +20,7 @@ public class CardService {
 
     @Async
     public CompletableFuture<Card[]> getCards() throws InterruptedException {
-        String cardsResourceUrl = "http://localhost/legacy-backend-rust/cards";
+        String cardsResourceUrl = "http://localhost:3000/cards";
         ResponseEntity<Card[]> response = restTemplate.getForEntity(cardsResourceUrl, Card[].class);
         Card[] cards = response.getBody();
 
