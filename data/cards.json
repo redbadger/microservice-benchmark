@@ -3,284 +3,284 @@
     "_id": "5f3baf3a969ab719074be5d5",
     "isFrozen": false,
     "cardNumber": "4532904207210719",
-    "transacton": [
+    "transactions": [
       {
         "amount": 3888,
         "currency": "USD",
         "merchant": "Comdom",
-        "timestamp": "Mon Apr 25 2016 01:38:43 GMT+0000 (UTC)"
+        "timestamp": "2016-04-25T01:38:43Z"
       },
       {
         "amount": 8145,
         "currency": "GBP",
         "merchant": "Interodeo",
-        "timestamp": "Tue Dec 20 1983 12:19:41 GMT+0000 (UTC)"
+        "timestamp": "1983-12-20T12:19:41Z"
       },
       {
         "amount": 3406,
         "currency": "GBP",
         "merchant": "Geofarm",
-        "timestamp": "Sat Oct 02 2004 16:44:06 GMT+0000 (UTC)"
+        "timestamp": "2004-10-02T16:44:06Z"
       },
       {
         "amount": 7501,
         "currency": "USD",
         "merchant": "Austex",
-        "timestamp": "Fri Oct 14 1977 04:40:01 GMT+0000 (UTC)"
+        "timestamp": "1977-10-14T04:40:01Z"
       },
       {
         "amount": 6862,
         "currency": "GBP",
         "merchant": "Inquala",
-        "timestamp": "Sat Dec 09 1978 03:43:24 GMT+0000 (UTC)"
+        "timestamp": "1978-12-09T03:43:24Z"
       },
       {
         "amount": 2745,
         "currency": "USD",
         "merchant": "Quilk",
-        "timestamp": "Fri Aug 31 2007 13:06:47 GMT+0000 (UTC)"
+        "timestamp": "2007-08-31T13:06:47Z"
       },
       {
         "amount": 5100,
         "currency": "EUR",
         "merchant": "Fishland",
-        "timestamp": "Sat Sep 02 1978 09:18:29 GMT+0000 (UTC)"
+        "timestamp": "1978-09-02T09:18:29Z"
       },
       {
         "amount": 492,
         "currency": "EUR",
         "merchant": "Comtent",
-        "timestamp": "Wed Sep 29 1971 04:50:51 GMT+0000 (UTC)"
+        "timestamp": "1971-09-29T04:50:51Z"
       },
       {
         "amount": 6896,
         "currency": "GBP",
         "merchant": "Comtext",
-        "timestamp": "Sun Mar 30 2003 18:49:32 GMT+0000 (UTC)"
+        "timestamp": "2003-03-30T18:49:32Z"
       },
       {
         "amount": 4634,
         "currency": "USD",
         "merchant": "Pushcart",
-        "timestamp": "Thu Nov 21 2002 06:12:34 GMT+0000 (UTC)"
+        "timestamp": "2002-11-21T06:12:34Z"
       }
     ]
   },
   {
     "_id": "5f3baf3a34f66b8c95ec86e3",
     "isFrozen": false,
-    "cardNumber": 8703477361099912,
-    "transacton": [
+    "cardNumber": "8703477361099912",
+    "transactions": [
       {
         "amount": 3001,
         "currency": "GBP",
         "merchant": "Kaggle",
-        "timestamp": "Sat Feb 17 1979 08:34:19 GMT+0000 (UTC)"
+        "timestamp": "1979-02-17T08:34:19Z"
       },
       {
         "amount": 5941,
         "currency": "EUR",
         "merchant": "Frosnex",
-        "timestamp": "Mon Jul 03 1995 17:02:56 GMT+0000 (UTC)"
+        "timestamp": "1995-07-03T17:02:56Z"
       },
       {
         "amount": 986,
         "currency": "USD",
         "merchant": "Koogle",
-        "timestamp": "Fri Jun 05 1987 16:26:17 GMT+0000 (UTC)"
+        "timestamp": "1987-06-05T16:26:17Z"
       },
       {
         "amount": 1654,
         "currency": "GBP",
         "merchant": "Austech",
-        "timestamp": "Fri Feb 21 2014 19:57:39 GMT+0000 (UTC)"
+        "timestamp": "2014-02-21T19:57:39Z"
       },
       {
         "amount": 7784,
         "currency": "GBP",
         "merchant": "Quonk",
-        "timestamp": "Fri Sep 25 1981 13:40:41 GMT+0000 (UTC)"
+        "timestamp": "1981-09-25T13:40:41Z"
       },
       {
         "amount": 2516,
         "currency": "EUR",
         "merchant": "Entogrok",
-        "timestamp": "Thu Sep 07 1978 17:28:01 GMT+0000 (UTC)"
+        "timestamp": "1978-09-07T17:28:01Z"
       },
       {
         "amount": 5963,
         "currency": "USD",
         "merchant": "Hydrocom",
-        "timestamp": "Tue Jan 31 1984 12:25:25 GMT+0000 (UTC)"
+        "timestamp": "1984-01-31T12:25:25Z"
       },
       {
         "amount": 5535,
         "currency": "USD",
         "merchant": "Nspire",
-        "timestamp": "Tue Feb 03 1976 04:38:39 GMT+0000 (UTC)"
+        "timestamp": "1976-02-03T04:38:39Z"
       },
       {
         "amount": 7753,
         "currency": "EUR",
         "merchant": "Helixo",
-        "timestamp": "Mon Jul 24 1995 09:24:12 GMT+0000 (UTC)"
+        "timestamp": "1995-07-24T09:24:12Z"
       },
       {
         "amount": 5274,
         "currency": "EUR",
         "merchant": "Fuelton",
-        "timestamp": "Sat Dec 05 2015 00:01:19 GMT+0000 (UTC)"
+        "timestamp": "2015-12-05T00:01:19Z"
       },
       {
         "amount": 6420,
         "currency": "GBP",
         "merchant": "Crustatia",
-        "timestamp": "Wed Aug 24 2005 04:03:47 GMT+0000 (UTC)"
+        "timestamp": "2005-08-24T04:03:47Z"
       },
       {
         "amount": 8111,
         "currency": "GBP",
         "merchant": "Emergent",
-        "timestamp": "Sun May 10 2020 08:36:25 GMT+0000 (UTC)"
+        "timestamp": "2020-05-10T08:36:25Z"
       },
       {
         "amount": 6437,
         "currency": "GBP",
         "merchant": "Zensus",
-        "timestamp": "Wed Dec 22 1999 08:04:59 GMT+0000 (UTC)"
+        "timestamp": "1999-12-22T08:04:59Z"
       },
       {
         "amount": 9221,
         "currency": "GBP",
         "merchant": "Cedward",
-        "timestamp": "Thu Dec 24 1987 12:37:59 GMT+0000 (UTC)"
+        "timestamp": "1987-12-24T12:37:59Z"
       },
       {
         "amount": 5255,
         "currency": "GBP",
         "merchant": "Tubalum",
-        "timestamp": "Tue Sep 14 1993 21:21:39 GMT+0000 (UTC)"
+        "timestamp": "1993-09-14T21:21:39Z"
       },
       {
         "amount": 5131,
         "currency": "GBP",
         "merchant": "Rameon",
-        "timestamp": "Sat May 09 1992 04:28:48 GMT+0000 (UTC)"
+        "timestamp": "1992-05-09T04:28:48Z"
       },
       {
         "amount": 9922,
         "currency": "GBP",
         "merchant": "Photobin",
-        "timestamp": "Tue Sep 25 1973 16:25:12 GMT+0000 (UTC)"
+        "timestamp": "1973-09-25T16:25:12Z"
       },
       {
         "amount": 2333,
         "currency": "GBP",
         "merchant": "Ultrasure",
-        "timestamp": "Fri Jul 08 1994 07:36:11 GMT+0000 (UTC)"
+        "timestamp": "1994-07-08T07:36:11Z"
       },
       {
         "amount": 4839,
         "currency": "EUR",
         "merchant": "Fangold",
-        "timestamp": "Sat Jun 02 2018 00:28:38 GMT+0000 (UTC)"
+        "timestamp": "2018-06-02T00:28:38Z"
       },
       {
         "amount": 275,
         "currency": "USD",
         "merchant": "Multron",
-        "timestamp": "Tue Jul 23 2019 17:26:51 GMT+0000 (UTC)"
+        "timestamp": "2019-07-23T17:26:51Z"
       }
     ]
   },
   {
     "_id": "5f3baf3a9b58ee3998fe6217",
     "isFrozen": true,
-    "cardNumber": 1116720923397461,
-    "transacton": [
+    "cardNumber": "1116720923397461",
+    "transactions": [
       {
         "amount": 5139,
         "currency": "EUR",
         "merchant": "Extragene",
-        "timestamp": "Fri Apr 26 1985 03:15:10 GMT+0000 (UTC)"
+        "timestamp": "1985-04-26T03:15:10Z"
       },
       {
         "amount": 5280,
         "currency": "GBP",
         "merchant": "Earbang",
-        "timestamp": "Thu Nov 01 1984 07:18:44 GMT+0000 (UTC)"
+        "timestamp": "1984-11-01T07:18:44Z"
       },
       {
         "amount": 9062,
         "currency": "USD",
         "merchant": "Yurture",
-        "timestamp": "Sun Nov 11 1984 18:36:44 GMT+0000 (UTC)"
+        "timestamp": "1984-11-11T18:36:44Z"
       },
       {
         "amount": 1864,
         "currency": "USD",
         "merchant": "Eweville",
-        "timestamp": "Thu Aug 28 1986 23:51:19 GMT+0000 (UTC)"
+        "timestamp": "1986-08-28T23:51:19Z"
       },
       {
         "amount": 6045,
         "currency": "EUR",
         "merchant": "Assurity",
-        "timestamp": "Tue Aug 23 2016 21:17:49 GMT+0000 (UTC)"
+        "timestamp": "2016-08-23T21:17:49Z"
       },
       {
         "amount": 6210,
         "currency": "GBP",
         "merchant": "Norali",
-        "timestamp": "Thu May 17 2012 23:47:22 GMT+0000 (UTC)"
+        "timestamp": "2012-05-17T23:47:22Z"
       },
       {
         "amount": 1714,
         "currency": "GBP",
         "merchant": "Navir",
-        "timestamp": "Tue Apr 25 1995 12:57:07 GMT+0000 (UTC)"
+        "timestamp": "1995-04-25T12:57:07Z"
       },
       {
         "amount": 2912,
         "currency": "EUR",
         "merchant": "Aquasseur",
-        "timestamp": "Wed Aug 09 1989 23:14:43 GMT+0000 (UTC)"
+        "timestamp": "1989-08-09T23:14:43Z"
       },
       {
         "amount": 8157,
         "currency": "EUR",
         "merchant": "Peticular",
-        "timestamp": "Thu Feb 01 1996 03:42:43 GMT+0000 (UTC)"
+        "timestamp": "1996-02-01T03:42:43Z"
       },
       {
         "amount": 1084,
         "currency": "GBP",
         "merchant": "Dognost",
-        "timestamp": "Fri Apr 27 1990 00:18:53 GMT+0000 (UTC)"
+        "timestamp": "1990-04-27T00:18:53Z"
       },
       {
         "amount": 132,
         "currency": "GBP",
         "merchant": "Euron",
-        "timestamp": "Mon Sep 26 1988 23:45:27 GMT+0000 (UTC)"
+        "timestamp": "1988-09-26T23:45:27Z"
       },
       {
         "amount": 7382,
         "currency": "EUR",
         "merchant": "Sybixtex",
-        "timestamp": "Thu Jan 30 2020 02:12:50 GMT+0000 (UTC)"
+        "timestamp": "2020-01-30T02:12:50Z"
       },
       {
         "amount": 9701,
         "currency": "GBP",
         "merchant": "Talkola",
-        "timestamp": "Wed Dec 13 1989 13:47:10 GMT+0000 (UTC)"
+        "timestamp": "1989-12-13T13:47:10Z"
       },
       {
         "amount": 8454,
         "currency": "EUR",
         "merchant": "Pasturia",
-        "timestamp": "Sun May 15 2005 12:15:56 GMT+0000 (UTC)"
+        "timestamp": "2005-05-15T12:15:56Z"
       }
     ]
   },
@@ -288,72 +288,72 @@
     "_id": "5f3baf3a4dd6fe7765648d73",
     "isFrozen": false,
     "cardNumber": "2234342487941683",
-    "transacton": [
+    "transactions": [
       {
         "amount": 8597,
         "currency": "GBP",
         "merchant": "Coriander",
-        "timestamp": "Fri Oct 01 1971 09:07:53 GMT+0000 (UTC)"
+        "timestamp": "1971-10-01T09:07:53Z"
       },
       {
         "amount": 7530,
         "currency": "USD",
         "merchant": "Senmei",
-        "timestamp": "Wed Aug 03 1977 11:15:48 GMT+0000 (UTC)"
+        "timestamp": "1977-08-03T11:15:48Z"
       },
       {
         "amount": 6855,
         "currency": "USD",
         "merchant": "Bittor",
-        "timestamp": "Sat Jun 01 1985 10:35:54 GMT+0000 (UTC)"
+        "timestamp": "1985-06-01T10:35:54Z"
       },
       {
         "amount": 3952,
         "currency": "EUR",
         "merchant": "Furnigeer",
-        "timestamp": "Tue Feb 21 2012 20:43:28 GMT+0000 (UTC)"
+        "timestamp": "2012-02-21T20:43:28Z"
       },
       {
         "amount": 8653,
         "currency": "USD",
         "merchant": "Songlines",
-        "timestamp": "Sat Jul 16 1983 23:26:27 GMT+0000 (UTC)"
+        "timestamp": "1983-07-16T23:26:27Z"
       },
       {
         "amount": 4050,
         "currency": "USD",
         "merchant": "Kongene",
-        "timestamp": "Wed Jul 14 2010 22:58:59 GMT+0000 (UTC)"
+        "timestamp": "2010-07-14T22:58:59Z"
       },
       {
         "amount": 2033,
         "currency": "EUR",
         "merchant": "Kongle",
-        "timestamp": "Sun Mar 12 1989 15:30:48 GMT+0000 (UTC)"
+        "timestamp": "1989-03-12T15:30:48Z"
       },
       {
         "amount": 894,
         "currency": "USD",
         "merchant": "Maroptic",
-        "timestamp": "Mon Aug 29 1977 12:47:29 GMT+0000 (UTC)"
+        "timestamp": "1977-08-29T12:47:29Z"
       },
       {
         "amount": 4830,
         "currency": "GBP",
         "merchant": "Zensure",
-        "timestamp": "Tue Nov 30 1999 16:55:12 GMT+0000 (UTC)"
+        "timestamp": "1999-11-30T16:55:12Z"
       },
       {
         "amount": 9202,
         "currency": "GBP",
         "merchant": "Zillatide",
-        "timestamp": "Sun Mar 11 2007 06:59:12 GMT+0000 (UTC)"
+        "timestamp": "2007-03-11T06:59:12Z"
       },
       {
         "amount": 2097,
         "currency": "EUR",
         "merchant": "Vurbo",
-        "timestamp": "Sat Oct 18 1980 10:47:12 GMT+0000 (UTC)"
+        "timestamp": "1980-10-18T10:47:12Z"
       }
     ]
   },
@@ -361,108 +361,108 @@
     "_id": "5f3baf3a3d7b9dee7f811262",
     "isFrozen": true,
     "cardNumber": "5375046599682320",
-    "transacton": [
+    "transactions": [
       {
         "amount": 6875,
         "currency": "EUR",
         "merchant": "Inear",
-        "timestamp": "Wed Oct 27 1999 12:28:30 GMT+0000 (UTC)"
+        "timestamp": "1999-10-27T12:28:30Z"
       },
       {
         "amount": 4082,
         "currency": "GBP",
         "merchant": "Adornica",
-        "timestamp": "Fri Sep 08 2006 08:52:29 GMT+0000 (UTC)"
+        "timestamp": "2006-09-08T08:52:29Z"
       },
       {
         "amount": 3282,
         "currency": "GBP",
         "merchant": "Realmo",
-        "timestamp": "Sun Mar 01 1998 15:14:59 GMT+0000 (UTC)"
+        "timestamp": "1998-03-01T15:14:59Z"
       },
       {
         "amount": 1314,
         "currency": "GBP",
         "merchant": "Netur",
-        "timestamp": "Tue Feb 27 2007 11:09:26 GMT+0000 (UTC)"
+        "timestamp": "2007-02-27T11:09:26Z"
       },
       {
         "amount": 4988,
         "currency": "GBP",
         "merchant": "Tasmania",
-        "timestamp": "Wed Mar 08 1978 08:07:28 GMT+0000 (UTC)"
+        "timestamp": "1978-03-08T08:07:28Z"
       },
       {
         "amount": 4876,
         "currency": "EUR",
         "merchant": "Nikuda",
-        "timestamp": "Tue Jul 10 1984 01:59:02 GMT+0000 (UTC)"
+        "timestamp": "1984-07-10T01:59:02Z"
       },
       {
         "amount": 227,
         "currency": "GBP",
         "merchant": "Zolarity",
-        "timestamp": "Sun Dec 13 1987 01:18:14 GMT+0000 (UTC)"
+        "timestamp": "1987-12-13T01:18:14Z"
       },
       {
         "amount": 6124,
         "currency": "GBP",
         "merchant": "Comvey",
-        "timestamp": "Wed Jul 14 1971 17:54:21 GMT+0000 (UTC)"
+        "timestamp": "1971-07-14T17:54:21Z"
       },
       {
         "amount": 7065,
         "currency": "GBP",
         "merchant": "Anixang",
-        "timestamp": "Mon Mar 09 2015 02:37:37 GMT+0000 (UTC)"
+        "timestamp": "2015-03-09T02:37:37Z"
       },
       {
         "amount": 4179,
         "currency": "EUR",
         "merchant": "Applidec",
-        "timestamp": "Fri Feb 15 2013 20:10:40 GMT+0000 (UTC)"
+        "timestamp": "2013-02-15T20:10:40Z"
       },
       {
         "amount": 3293,
         "currency": "USD",
         "merchant": "Zialactic",
-        "timestamp": "Mon Feb 01 1993 01:49:49 GMT+0000 (UTC)"
+        "timestamp": "1993-02-01T01:49:49Z"
       },
       {
         "amount": 9708,
         "currency": "EUR",
         "merchant": "Ziggles",
-        "timestamp": "Wed Mar 05 1986 01:12:44 GMT+0000 (UTC)"
+        "timestamp": "1986-03-05T01:12:44Z"
       },
       {
         "amount": 1341,
         "currency": "EUR",
         "merchant": "Deepends",
-        "timestamp": "Fri Dec 22 1978 12:38:37 GMT+0000 (UTC)"
+        "timestamp": "1978-12-22T12:38:37Z"
       },
       {
         "amount": 566,
         "currency": "USD",
         "merchant": "Strezzo",
-        "timestamp": "Tue Jun 17 1980 17:30:58 GMT+0000 (UTC)"
+        "timestamp": "1980-06-17T17:30:58Z"
       },
       {
         "amount": 562,
         "currency": "USD",
         "merchant": "Suretech",
-        "timestamp": "Sat Dec 23 2000 15:37:01 GMT+0000 (UTC)"
+        "timestamp": "2000-12-23T15:37:01Z"
       },
       {
         "amount": 6490,
         "currency": "USD",
         "merchant": "Opticom",
-        "timestamp": "Fri Jun 08 2012 16:33:02 GMT+0000 (UTC)"
+        "timestamp": "2012-06-08T16:33:02Z"
       },
       {
         "amount": 4262,
         "currency": "USD",
         "merchant": "Magnafone",
-        "timestamp": "Mon Aug 29 1988 19:37:19 GMT+0000 (UTC)"
+        "timestamp": "1988-08-29T19:37:19Z"
       }
     ]
   }

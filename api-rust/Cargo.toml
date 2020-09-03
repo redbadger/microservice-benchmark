@@ -1,14 +1,19 @@
 [package]
 authors = ["Stuart Harris <stuart.harris@red-badger.com>"]
 edition = "2018"
-name = "legacy-backend-rust"
+name = "api-rust"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1.0.32"
 async-std = {version = "1.6.3", features = ["attributes", "unstable"]}
-rand = {version = "0.7.3", features = ["small_rng"]}
-rand_distr = "0.3.0"
+chrono = {version = "0.4.15", features = ["serde"]}
+futures = "0.3.5"
+isahc = {version = "0.9.8", features = ["json"]}
+serde = {version = "1.0.115", features = ["derive"]}
+serde_json = "1.0.57"
+structopt = "0.3.17"
 tide = "0.13.0"
+url = "2.1.1"
+uuid = {version = "0.8.1", features = ["serde", "v4"]}
