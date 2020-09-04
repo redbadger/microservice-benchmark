@@ -20,5 +20,5 @@ COPY --chown=svc --from=build \
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
-EXPOSE 3000
+EXPOSE 8000
 CMD ["/app/api-go"]

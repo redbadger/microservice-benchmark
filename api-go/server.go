@@ -140,6 +140,6 @@ func main() {
 		w.WriteHeader(http.StatusNoContent)
 	})
 
-	fmt.Printf("Listening on 3000\n")
-	http.ListenAndServe(":3000", nil)
+	fmt.Printf("Listening on 8000\n")
+	http.ListenAndServe(":8000", nil)
 }

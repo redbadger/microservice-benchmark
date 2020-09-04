@@ -19,7 +19,7 @@ spec:
           image: api_go
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 3000
+            - containerPort: 8000
           env:
             - name: API_ACCOUNTS
               value: http://legacy-backend-rust.legacy-backend-rust/accounts
@@ -37,14 +37,14 @@ spec:
           readinessProbe:
             httpGet:
               path: /healthz
-              port: 3000
+              port: 8000
             initialDelaySeconds: 2
             periodSeconds: 10
             timeoutSeconds: 10
           livenessProbe:
             httpGet:
               path: /healthz
-              port: 3000
+              port: 8000
             initialDelaySeconds: 2
             periodSeconds: 20
             timeoutSeconds: 10
