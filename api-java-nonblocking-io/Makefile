@@ -1,6 +1,9 @@
 .PHONY: default
 default: build
 	ulimit -n 4096 && \
+		API_ACCOUNTS=http://localhost:3000/accounts \
+		API_CARDS=http://localhost:3000/cards \
+		API_CUSTOMER=http://localhost:3000/customer \
 		java -jar ./target/demo-0.0.1-SNAPSHOT.jar --server.port=8000
 
 .PHONY: build
