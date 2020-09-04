@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-rust
+  name: api-java-blocking
   labels:
-    app: api-rust
+    app: api-java-blocking
 spec:
   selector:
     matchLabels:
-      app: api-rust
+      app: api-java-blocking
   replicas: 1
   template:
     metadata:
       labels:
-        app: api-rust
+        app: api-java-blocking
     spec:
       containers:
-        - name: api-rust
-          image: api_rust
+        - name: api-java-blocking
+          image: api_java_blocking
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
@@ -36,14 +36,14 @@ spec:
               cpu: "2"
           readinessProbe:
             httpGet:
-              path: /healthz
+              path: /actuator/health
               port: 8000
             initialDelaySeconds: 2
             periodSeconds: 10
             timeoutSeconds: 10
           livenessProbe:
             httpGet:
-              path: /healthz
+              path: /actuator/health
               port: 8000
             initialDelaySeconds: 2
             periodSeconds: 20

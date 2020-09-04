@@ -1,4 +1,4 @@
-base: http://localhost/api-rust
+base: http://localhost/api-java-blocking
 iterations: 4000
 concurrency: 200
 
