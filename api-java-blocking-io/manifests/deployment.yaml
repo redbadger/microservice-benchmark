@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: api-java-blocking
-  replicas: 4
+  replicas: 1
   template:
     metadata:
       labels:
@@ -29,11 +29,11 @@ spec:
               value: http://legacy-backend-rust.legacy-backend-rust/customer
           resources:
             requests:
-              memory: "500Mi"
-              cpu: "300m"
+              memory: "1Gi"
+              cpu: "1"
             limits:
-              memory: "2000Mi"
-              cpu: "1000m"
+              memory: "2Gi"
+              cpu: "2"
           readinessProbe:
             httpGet:
               path: /actuator/health

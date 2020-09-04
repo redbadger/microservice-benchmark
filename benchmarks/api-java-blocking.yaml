@@ -1,5 +1,5 @@
 base: http://localhost/api-java-blocking
-iterations: 10000
+iterations: 4000
 concurrency: 200
 
 plan:
