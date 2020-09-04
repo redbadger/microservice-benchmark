@@ -1,0 +1,8 @@
+base: http://localhost/api-node
+iterations: 10000
+concurrency: 200
+
+plan:
+  - name: Fetch
+    request:
+      url: /
