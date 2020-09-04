@@ -1,6 +1,6 @@
 FROM golang:1.15 AS build
 
-COPY api-go/*.go ./
+COPY *.go ./
 
 RUN go build -o api-go .
 
@@ -17,7 +17,6 @@ USER svc
 COPY --chown=svc --from=build \
     /go/api-go \
     /app/api-go
-COPY data /data
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 

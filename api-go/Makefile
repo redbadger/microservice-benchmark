@@ -6,9 +6,7 @@ default:
 
 .PHONY: docker
 docker:
-	tar cv Dockerfile -C .. api-go data | \
-		docker build - \
-			--tag api_go
+	docker build --tag api_go .
 
 .PHONY: docker-run
 docker-run:
