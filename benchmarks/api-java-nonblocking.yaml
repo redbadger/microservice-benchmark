@@ -1,0 +1,8 @@
+base: http://localhost/api-java-nonblocking
+iterations: 4000
+concurrency: 200
+
+plan:
+  - name: Fetch
+    request:
+      url: /
