@@ -1,5 +1,5 @@
 CONCURRENCY=10
-TIME=30
+TIME=30 # seconds
 ITERATIONS=$(shell echo $$(($(CONCURRENCY) * $(TIME))) )
 
 .PHONY: default
