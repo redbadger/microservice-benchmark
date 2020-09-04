@@ -5,20 +5,17 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd svc
-RUN mkdir -p /app
-RUN chown svc:svc /app
+WORKDIR /app
 
-COPY *.json /app/
-RUN cd /app && npm install
+COPY --chown=svc:svc *.json ./
+RUN npm install
 
-COPY src /app/src
-RUN cd /app && npm run build
+COPY --chown=svc:svc src src
+RUN npm run build
 
 USER svc
-
-RUN ls -l /app
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 EXPOSE 8000
-CMD ["node", "/app/dist/server.js"]
+CMD ["node", "dist/server.js"]
