@@ -10,7 +10,7 @@ import (
 
 func handler(data []byte) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
-		pause := int64((rand.NormFloat64()*0.3 + 2) * 1_000_000_000)
+		pause := int64((rand.NormFloat64()*0.15 + 0.5) * 1_000_000_000)
 		time.Sleep(time.Duration(pause))
 
 		w.Header()["Content-Type"] = []string{"application/json"}

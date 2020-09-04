@@ -1,12 +1,12 @@
 .PHONY: default
-default: install ## Install legacy-backend-go
+default: install ## Install api-go
 
 .PHONY: install
-install: ## Install legacy-backend-go
+install: ## Install api-go
 	kustomize build . | kubectl apply -f -
 
 .PHONY: delete
-delete: ## Remove legacy-backend-go
+delete: ## Remove api-go
 	kustomize build . | kubectl delete -f - --ignore-not-found || true
 
 .PHONY: help

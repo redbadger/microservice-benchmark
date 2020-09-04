@@ -1,0 +1,22 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: api-go
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - istio-system/ingressgateway
+  http:
+    - match:
+        - uri:
+            prefix: "/api-go/"
+        - uri:
+            prefix: "/api-go"
+      rewrite:
+        uri: "/"
+      route:
+        - destination:
+            port:
+              number: 80
+            host: api-go
