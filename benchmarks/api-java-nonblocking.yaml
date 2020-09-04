@@ -1,6 +1,6 @@
-base: http://localhost/api-java-nonblocking
-iterations: 4000
-concurrency: 200
+base: http://{{ HOST }}/api-java-nonblocking
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
 
 plan:
   - name: Fetch

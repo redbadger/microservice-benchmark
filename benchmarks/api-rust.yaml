@@ -1,6 +1,6 @@
-base: http://localhost/api-rust
-iterations: 4000
-concurrency: 200
+base: http://{{ HOST }}/api-rust
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
 
 plan:
   - name: Fetch

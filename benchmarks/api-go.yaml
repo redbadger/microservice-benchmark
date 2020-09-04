@@ -1,6 +1,6 @@
-base: http://localhost/api-go
-iterations: 4000
-concurrency: 200
+base: http://{{ HOST }}/api-go
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
 
 plan:
   - name: Fetch
