@@ -1,0 +1,7 @@
+namespace: api-node
+
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+  - virtualservice.yaml
