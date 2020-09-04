@@ -1,0 +1,7 @@
+namespace: api-go
+
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+  - virtualservice.yaml
