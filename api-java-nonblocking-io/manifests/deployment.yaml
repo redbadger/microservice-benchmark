@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-java-nonblocking
+  labels:
+    app: api-java-nonblocking
+spec:
+  selector:
+    matchLabels:
+      app: api-java-nonblocking
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: api-java-nonblocking
+    spec:
+      containers:
+        - name: api-java-nonblocking
+          image: api_java_nonblocking
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            - name: API_ACCOUNTS
+              value: http://legacy-backend-rust.legacy-backend-rust/accounts
+            - name: API_CARDS
+              value: http://legacy-backend-rust.legacy-backend-rust/cards
+            - name: API_CUSTOMER
+              value: http://legacy-backend-rust.legacy-backend-rust/customer
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "1"
+            limits:
+              memory: "2Gi"
+              cpu: "2"
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8000
+            initialDelaySeconds: 2
+            periodSeconds: 10
+            timeoutSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8000
+            initialDelaySeconds: 2
+            periodSeconds: 20
+            timeoutSeconds: 10
