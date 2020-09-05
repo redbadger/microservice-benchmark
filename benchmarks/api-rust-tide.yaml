@@ -1,4 +1,4 @@
-base: http://{{ HOST }}/api-rust-tide
+base: http://{{ HOST }}
 iterations: "{{ ITERATIONS }}"
 concurrency: "{{ CONCURRENCY }}"
 

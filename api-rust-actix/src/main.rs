@@ -1,4 +1,4 @@
-use actix_web::{middleware::Logger, web, App, HttpResponse, HttpServer};
+use api_rust_actix::run;
 use std::io::Result;
 use structopt::StructOpt;
 use url::Url;
@@ -30,27 +30,18 @@ pub struct Config {
     url_customer: Url,
 }
 
-#[actix_web::main]
+#[actix_rt::main]
 async fn main() -> Result<()> {
     let config = Config::from_args();
-    let port = config.port;
-    let state = api_rust_actix::State {
-        url_accounts: config.url_accounts,
-        url_cards: config.url_cards,
-        url_customer: config.url_customer,
-    };
 
     std::env::set_var("RUST_LOG", "actix_web=info");
     env_logger::init();
 
-    HttpServer::new(move || {
-        App::new()
-            .wrap(Logger::default())
-            .data(state.clone())
-            .service(web::resource("/").to(api_rust_actix::index))
-            .service(web::resource("/healthz").to(|| async { HttpResponse::NoContent().finish() }))
-    })
-    .bind(format!("0.0.0.0:{}", port))?
-    .run()
+    run(
+        config.url_accounts,
+        config.url_cards,
+        config.url_customer,
+        config.port,
+    )?
     .await
 }
