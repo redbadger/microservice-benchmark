@@ -1,0 +1,8 @@
+base: http://{{ HOST }}/api-rust-tide
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
+
+plan:
+  - name: Fetch
+    request:
+      url: /

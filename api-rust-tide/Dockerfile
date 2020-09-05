@@ -5,7 +5,7 @@ RUN rustup component add rustfmt clippy
 COPY Cargo.toml Cargo.lock ./
 
 RUN mkdir -p ./src/ && echo 'fn main() {}' >./src/main.rs && echo '' >./src/lib.rs
-RUN cargo build --release && rm -rf ./target/release/.fingerprint/api-rust-*
+RUN cargo build --release && rm -rf ./target/release/.fingerprint/api-rust-tide-*
 
 COPY src ./src
 
@@ -25,10 +25,10 @@ RUN useradd svc
 USER svc
 
 COPY --chown=svc --from=build \
-    /target/release/api-rust \
+    /target/release/api-rust-tide \
     /
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 EXPOSE 8000
-CMD ["/api-rust"]
+CMD ["/api-rust-tide"]

@@ -1,4 +1,4 @@
-namespace: api-rust
+namespace: api-rust-actix
 
 resources:
   - namespace.yaml

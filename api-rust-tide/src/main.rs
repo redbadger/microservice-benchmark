@@ -36,7 +36,7 @@ async fn main() -> Result<()> {
 
     tide::log::with_level(log::LevelFilter::Error);
 
-    api_rust::create_app(config.url_accounts, config.url_cards, config.url_customer)
+    api_rust_tide::create_app(config.url_accounts, config.url_cards, config.url_customer)
         .await?
         .listen(format!("0.0.0.0:{}", config.port))
         .await?;

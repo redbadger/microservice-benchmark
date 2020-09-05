@@ -1,12 +1,12 @@
 .PHONY: default
-default: install ## Install api-rust
+default: install ## Install api-rust-tide
 
 .PHONY: install
-install: ## Install api-rust
+install: ## Install api-rust-tide
 	kustomize build . | kubectl apply -f -
 
 .PHONY: delete
-delete: ## Remove api-rust
+delete: ## Remove api-rust-tide
 	kustomize build . | kubectl delete -f - --ignore-not-found || true
 
 .PHONY: help

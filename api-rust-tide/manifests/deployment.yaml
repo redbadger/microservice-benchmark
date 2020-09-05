@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-rust
+  name: api-rust-tide
   labels:
-    app: api-rust
+    app: api-rust-tide
 spec:
   selector:
     matchLabels:
-      app: api-rust
+      app: api-rust-tide
   replicas: 1
   template:
     metadata:
       labels:
-        app: api-rust
+        app: api-rust-tide
     spec:
       containers:
-        - name: api-rust
-          image: api_rust
+        - name: api-rust-tide
+          image: api_rust_tide
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
