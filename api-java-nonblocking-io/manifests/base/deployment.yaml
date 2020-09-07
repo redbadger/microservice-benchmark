@@ -14,6 +14,8 @@ spec:
       labels:
         app: api-java-nonblocking
     spec:
+      nodeSelector:
+        api: "true"
       containers:
         - name: api-java-nonblocking
           image: api_java_nonblocking

@@ -14,6 +14,8 @@ spec:
       labels:
         app: legacy-backend-rust
     spec:
+      nodeSelector:
+        backend: "true"
       containers:
         - name: legacy-backend-rust
           image: legacy_backend_rust

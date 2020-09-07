@@ -14,6 +14,8 @@ spec:
       labels:
         app: legacy-backend-go
     spec:
+      nodeSelector:
+        backend: "true"
       containers:
         - name: legacy-backend-go
           image: legacy_backend_go

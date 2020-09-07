@@ -14,6 +14,8 @@ spec:
       labels:
         app: api-java-blocking
     spec:
+      nodeSelector:
+        api: "true"
       containers:
         - name: api-java-blocking
           image: api_java_blocking
