@@ -1,3 +1,5 @@
+TAG=eu.gcr.io/feature-targeting/api_java_blocking
+
 .PHONY: default
 default: build
 	ulimit -n 4096 && \
@@ -9,8 +11,8 @@ build:
 
 .PHONY: docker
 docker: build
-	docker build -t eu.gcr.io/feature-targeting/api_java_blocking . && docker push
+	docker build -t $(TAG) . && docker push $(TAG)
 
 .PHONY: docker-run
 docker-run:
-	docker run -p8000:8000 --ulimit nofile=4096:4096 eu.gcr.io/feature-targeting/api_java_blocking
+	docker run -p8000:8000 --ulimit nofile=4096:4096 $(TAG)

@@ -18,4 +18,12 @@ node:
 rust:
 	cd api-rust && $(MAKE) docker && cd manifests && $(MAKE) delete && $(MAKE)
 
-.PHONY: backend-rust go java-blocking java-nonblocking node rust
+all-no-build:
+	cd legacy-backend-rust/manifests && $(MAKE) delete && $(MAKE)
+	cd api-go/manifests && $(MAKE) delete && $(MAKE)
+	cd api-java-blocking-io/manifests && $(MAKE) delete && $(MAKE)
+	cd api-java-nonblocking-io/manifests && $(MAKE) delete && $(MAKE)
+	cd api-node-ts/manifests && $(MAKE) delete && $(MAKE)
+	cd api-rust/manifests && $(MAKE) delete && $(MAKE)
+
+.PHONY: backend-rust go java-blocking java-nonblocking node rust all-no-build
