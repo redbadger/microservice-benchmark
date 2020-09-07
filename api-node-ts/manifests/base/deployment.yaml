@@ -19,7 +19,7 @@ spec:
       containers:
         - name: api-node
           image: eu.gcr.io/feature-targeting/api_node
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
           env:

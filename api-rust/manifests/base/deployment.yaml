@@ -19,7 +19,7 @@ spec:
       containers:
         - name: api-rust
           image: eu.gcr.io/feature-targeting/api_rust
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
           env:
