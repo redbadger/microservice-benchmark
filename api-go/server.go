@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"time"
 )
 
 // CustomerResult is a result of fetching a customer from the backend which can be put on a channel
@@ -141,5 +142,12 @@ func main() {
 	})
 
 	fmt.Printf("Listening on 8000\n")
-	http.ListenAndServe(":8000", nil)
+	srv := &http.Server{
+		Addr:         ":8000",
+		ReadTimeout:  5 * time.Second,
+		WriteTimeout: 10 * time.Second,
+		Handler:      http.DefaultServeMux,
+	}
+
+	srv.ListenAndServe()
 }
