@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-java-blocking
+spec:
+  template:
+    spec:
+      containers:
+        - name: api-java-blocking
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "250m"
+            limits:
+              memory: "2Gi"
+              cpu: "2"

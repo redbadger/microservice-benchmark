@@ -1,21 +1,28 @@
+HOST=localhost
 CONCURRENCY=10
 TIME=30 # seconds
 ITERATIONS=$(shell echo $$(($(CONCURRENCY) * $(TIME))) )
 
-.PHONY: default
-default:
-	export HOST=localhost CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-go.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-node.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-rust.yaml
+default: go java-blocking java-nonblocking node rust
 
-.PHONY: gke
-gke:
-	export HOST=TODO CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-go.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-node.yaml && sleep 10 && \
-		drill --stats --quiet --benchmark api-rust.yaml
+go:
+	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
+		drill --stats --quiet --benchmark api-go.yaml && sleep 10
+
+java-blocking:
+	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
+		drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+
+java-nonblocking:
+	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
+		drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+
+node:
+	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
+		drill --stats --quiet --benchmark api-node.yaml && sleep 10
+
+rust:
+	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
+		drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+
+.PHONY: go java-blocking java-nonblocking node rust

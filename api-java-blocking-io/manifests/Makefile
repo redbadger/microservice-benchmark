@@ -1,13 +1,15 @@
+OVERLAY:=med-resources
+
 .PHONY: default
 default: install ## Install api-java-blocking
 
 .PHONY: install
 install: ## Install api-java-blocking
-	kustomize build . | kubectl apply -f -
+	kustomize build ./overlays/$(OVERLAY) | kubectl apply -f -
 
 .PHONY: delete
 delete: ## Remove api-java-blocking
-	kustomize build . | kubectl delete -f - --ignore-not-found || true
+	kustomize build ./overlays/$(OVERLAY) | kubectl delete -f - --ignore-not-found || true
 
 .PHONY: help
 help: ## Display this help screen

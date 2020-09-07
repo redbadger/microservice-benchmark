@@ -1,0 +1,7 @@
+namespace: api-rust
+
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - deployment.yaml

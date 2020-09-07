@@ -1,0 +1,7 @@
+namespace: api-java-nonblocking
+
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - deployment.yaml

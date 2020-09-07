@@ -1,0 +1,7 @@
+namespace: api-java-blocking
+
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - deployment.yaml

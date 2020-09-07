@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-rust
+spec:
+  template:
+    spec:
+      containers:
+        - name: api-rust
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "1"
+            limits:
+              memory: "2Gi"
+              cpu: "2"
