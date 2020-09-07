@@ -16,4 +16,4 @@ default:
 .PHONY: rust
 rust:
 	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-rust-tide.yaml
+		drill --stats --quiet --benchmark api-rust-actix.yaml

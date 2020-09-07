@@ -30,18 +30,26 @@ pub struct Config {
     url_customer: Url,
 }
 
-#[actix_rt::main]
-async fn main() -> Result<()> {
+fn main() -> Result<()> {
     let config = Config::from_args();
 
     std::env::set_var("RUST_LOG", "actix_web=info");
     env_logger::init();
 
-    run(
-        config.url_accounts,
-        config.url_cards,
-        config.url_customer,
-        config.port,
-    )?
-    .await
+    let mut tokio_runtime = tokio::runtime::Runtime::new().unwrap();
+    let local_tasks = tokio::task::LocalSet::new();
+
+    let system_fut = actix_rt::System::run_in_tokio("main", &local_tasks);
+
+    local_tasks.block_on(&mut tokio_runtime, async {
+        tokio::task::spawn_local(system_fut);
+
+        run(
+            config.url_accounts,
+            config.url_cards,
+            config.url_customer,
+            config.port,
+        )?
+        .await
+    })
 }
