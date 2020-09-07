@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: benchmarks
+  labels:
+    app: benchmarks
+spec:
+  selector:
+    matchLabels:
+      app: benchmarks
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: benchmarks
+    spec:
+      nodeSelector:
+        benchmark: "true"
+      containers:
+        - name: benchmarks
+          image: eu.gcr.io/feature-targeting/benchmarks
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              memory: "3Gi"
+              cpu: "8"
+            limits:
+              memory: "3Gi"
+              cpu: "8"

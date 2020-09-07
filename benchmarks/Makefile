@@ -1,28 +1,7 @@
-HOST=localhost
-CONCURRENCY=10
-TIME=30 # seconds
-ITERATIONS=$(shell echo $$(($(CONCURRENCY) * $(TIME))) )
+TAG=eu.gcr.io/feature-targeting/benchmarks
 
-default: go java-blocking java-nonblocking node rust
+.PHONY: docker
+docker:
+	docker build -t $(TAG) . && docker push $(TAG)
 
-go:
-	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-go.yaml && sleep 10
-
-java-blocking:
-	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
-
-java-nonblocking:
-	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
-
-node:
-	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-node.yaml && sleep 10
-
-rust:
-	export HOST=$(HOST) CONCURRENCY=$(CONCURRENCY) ITERATIONS=$(ITERATIONS) && \
-		drill --stats --quiet --benchmark api-rust.yaml && sleep 10
-
-.PHONY: go java-blocking java-nonblocking node rust
+.PHONY: docker

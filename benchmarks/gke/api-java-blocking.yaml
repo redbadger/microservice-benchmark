@@ -1,0 +1,8 @@
+base: http://api-java-blocking.api-java-blocking
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
+
+plan:
+  - name: Fetch
+    request:
+      url: /

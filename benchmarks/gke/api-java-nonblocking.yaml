@@ -1,0 +1,8 @@
+base: http://api-java-nonblocking.api-java-nonblocking
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
+
+plan:
+  - name: Fetch
+    request:
+      url: /

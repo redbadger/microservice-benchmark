@@ -1,0 +1,8 @@
+base: http://api-rust.api-rust
+iterations: "{{ ITERATIONS }}"
+concurrency: "{{ CONCURRENCY }}"
+
+plan:
+  - name: Fetch
+    request:
+      url: /
