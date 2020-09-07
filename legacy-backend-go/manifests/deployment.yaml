@@ -18,7 +18,7 @@ spec:
         backend: "true"
       containers:
         - name: legacy-backend-go
-          image: legacy_backend_go
+          image: eu.gcr.io/legacy_backend_go
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000

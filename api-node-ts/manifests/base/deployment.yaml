@@ -18,7 +18,7 @@ spec:
         api: "true"
       containers:
         - name: api-node
-          image: api_node
+          image: eu.gcr.io/api_node
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

@@ -18,7 +18,7 @@ spec:
         api: "true"
       containers:
         - name: api-rust
-          image: api_rust
+          image: eu.gcr.io/api_rust
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

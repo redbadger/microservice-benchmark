@@ -5,8 +5,8 @@ default:
 
 .PHONY: docker
 docker:
-	docker build --tag api_node .
+	docker build --tag eu.gcr.io/api_node . && docker push
 
 .PHONY: docker-run
 docker-run:
-	docker run -p8000:8000 --ulimit nofile=4096:4096 api_node
+	docker run -p8000:8000 --ulimit nofile=4096:4096 eu.gcr.io/api_node
