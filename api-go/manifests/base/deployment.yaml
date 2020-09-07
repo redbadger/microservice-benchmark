@@ -18,7 +18,7 @@ spec:
         api: "true"
       containers:
         - name: api-go
-          image: eu.gcr.io/api_go
+          image: eu.gcr.io/feature-targeting/api_go
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

@@ -18,7 +18,7 @@ spec:
         backend: "true"
       containers:
         - name: legacy-backend-rust
-          image: eu.gcr.io/legacy_backend_rust
+          image: eu.gcr.io/feature-targeting/legacy_backend_rust
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000

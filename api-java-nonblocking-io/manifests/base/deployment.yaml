@@ -18,7 +18,7 @@ spec:
         api: "true"
       containers:
         - name: api-java-nonblocking
-          image: eu.gcr.io/api_java_nonblocking
+          image: eu.gcr.io/feature-targeting/api_java_nonblocking
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

@@ -18,7 +18,7 @@ spec:
         api: "true"
       containers:
         - name: api-java-blocking
-          image: eu.gcr.io/api_java_blocking
+          image: eu.gcr.io/feature-targeting/api_java_blocking
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
