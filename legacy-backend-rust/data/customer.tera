@@ -1,0 +1,34 @@
+{
+  "_id": "5f3babd6fdf9a22d5e6ba680",
+  "index": 0,
+  "guid": "c5cc68ea-0ca8-48fa-8566-185eac6c3e8e",
+  "isActive": true,
+  "balance": "$1,030.91",
+  "picture": "http://placehold.it/32x32",
+  "name": {
+    "first": "Amber",
+    "last": "Park"
+  },
+  "company": "EZENTIA",
+  "email": "amber.park@ezentia.biz",
+  "phone": "+1 (803) 462-3539",
+  "addresses": [
+    {
+      "line1": "673 Sackett Street",
+      "line2": "Diaperville, Louisiana, 2655"
+    },
+    {
+      "line1": "691 Lott Place",
+      "line2": "Graniteville, Arizona, 1085"
+    },
+    {
+      "line1": "440 Vanderbilt Avenue",
+      "line2": "Soham, Oklahoma, 1451"
+    }
+  ],
+  "about": "Duis fugiat aliqua dolor nulla reprehenderit irure incididunt laboris do enim pariatur enim id. Ex ullamco ad aliquip do. Quis officia officia et eiusmod excepteur esse excepteur irure sunt et est ad tempor. Officia aliqua do et ut aliquip reprehenderit consequat eu et do eiusmod.",
+  "registered": "2016-03-09T01:07:00Z",
+  "latitude": 0.119723,
+  "longitude": -93.629141,
+  "tags": ["velit", "sunt", "reprehenderit", "pariatur", "ullamco"]
+}

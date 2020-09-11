@@ -1,4 +1,4 @@
-base: http://{{ HOST }}/legacy-backend-rust
+base: http://{{ HOST }}
 iterations: 10000
 concurrency: 1500
 
