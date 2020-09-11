@@ -26,4 +26,12 @@ all-no-build:
 	cd api-node-ts/manifests && $(MAKE) delete && $(MAKE)
 	cd api-rust/manifests && $(MAKE) delete && $(MAKE)
 
-.PHONY: backend-rust go java-blocking java-nonblocking node rust all-no-build
+delete:
+	cd legacy-backend-rust/manifests && $(MAKE) delete
+	cd api-go/manifests && $(MAKE) delete
+	cd api-java-blocking-io/manifests && $(MAKE) delete
+	cd api-java-nonblocking-io/manifests && $(MAKE) delete
+	cd api-node-ts/manifests && $(MAKE) delete
+	cd api-rust/manifests && $(MAKE) delete
+
+.PHONY: backend-rust go java-blocking java-nonblocking node rust all-no-build delete
