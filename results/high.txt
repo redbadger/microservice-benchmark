@@ -1,0 +1,3540 @@
+make default CONCURRENCY=10
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   637ms
+Fetch                     Average time per request  643ms
+Fetch                     Sample standard deviation 134ms
+
+Time taken for tests      19.6 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.29 [#/sec]
+Median time per request   637ms
+Average time per request  643ms
+Sample standard deviation 134ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  638ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.5 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.37 [#/sec]
+Median time per request   632ms
+Average time per request  638ms
+Sample standard deviation 112ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   620ms
+Fetch                     Average time per request  620ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.0 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.82 [#/sec]
+Median time per request   620ms
+Average time per request  620ms
+Sample standard deviation 112ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   617ms
+Fetch                     Average time per request  625ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.2 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.63 [#/sec]
+Median time per request   617ms
+Average time per request  625ms
+Sample standard deviation 111ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   620ms
+Fetch                     Average time per request  624ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.1 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.74 [#/sec]
+Median time per request   620ms
+Average time per request  624ms
+Sample standard deviation 113ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=10
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 119ms
+
+Time taken for tests      19.3 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.54 [#/sec]
+Median time per request   630ms
+Average time per request  632ms
+Sample standard deviation 119ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   619ms
+Fetch                     Average time per request  627ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.1 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.72 [#/sec]
+Median time per request   619ms
+Average time per request  627ms
+Sample standard deviation 114ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  622ms
+Fetch                     Sample standard deviation 107ms
+
+Time taken for tests      19.1 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.67 [#/sec]
+Median time per request   627ms
+Average time per request  622ms
+Sample standard deviation 107ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.3 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.51 [#/sec]
+Median time per request   630ms
+Average time per request  630ms
+Sample standard deviation 110ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   640ms
+Fetch                     Average time per request  641ms
+Fetch                     Sample standard deviation 105ms
+
+Time taken for tests      19.6 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.34 [#/sec]
+Median time per request   640ms
+Average time per request  641ms
+Sample standard deviation 105ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=10
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  638ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.5 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.38 [#/sec]
+Median time per request   631ms
+Average time per request  638ms
+Sample standard deviation 111ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   655ms
+Fetch                     Average time per request  651ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      20.0 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.02 [#/sec]
+Median time per request   655ms
+Average time per request  651ms
+Sample standard deviation 114ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.3 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.58 [#/sec]
+Median time per request   623ms
+Average time per request  629ms
+Sample standard deviation 113ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  627ms
+Fetch                     Sample standard deviation 107ms
+
+Time taken for tests      19.2 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.63 [#/sec]
+Median time per request   623ms
+Average time per request  627ms
+Sample standard deviation 107ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   624ms
+Fetch                     Average time per request  628ms
+Fetch                     Sample standard deviation 118ms
+
+Time taken for tests      19.1 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.68 [#/sec]
+Median time per request   624ms
+Average time per request  628ms
+Sample standard deviation 118ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=10
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  628ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.1 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.70 [#/sec]
+Median time per request   623ms
+Average time per request  628ms
+Sample standard deviation 110ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   634ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.3 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.52 [#/sec]
+Median time per request   634ms
+Average time per request  633ms
+Sample standard deviation 112ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 120ms
+
+Time taken for tests      19.4 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.48 [#/sec]
+Median time per request   629ms
+Average time per request  634ms
+Sample standard deviation 120ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   617ms
+Fetch                     Average time per request  623ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.0 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.76 [#/sec]
+Median time per request   617ms
+Average time per request  623ms
+Sample standard deviation 110ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 118ms
+
+Time taken for tests      19.4 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.44 [#/sec]
+Median time per request   628ms
+Average time per request  633ms
+Sample standard deviation 118ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=10
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 105ms
+
+Time taken for tests      19.4 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.45 [#/sec]
+Median time per request   627ms
+Average time per request  633ms
+Sample standard deviation 105ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.2 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.62 [#/sec]
+Median time per request   628ms
+Average time per request  629ms
+Sample standard deviation 114ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   617ms
+Fetch                     Average time per request  622ms
+Fetch                     Sample standard deviation 108ms
+
+Time taken for tests      19.0 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.79 [#/sec]
+Median time per request   617ms
+Average time per request  622ms
+Sample standard deviation 108ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   639ms
+Fetch                     Average time per request  641ms
+Fetch                     Sample standard deviation 116ms
+
+Time taken for tests      19.6 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.30 [#/sec]
+Median time per request   639ms
+Average time per request  641ms
+Sample standard deviation 116ms
+export CONCURRENCY=10 ITERATIONS=300 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 10
+Iterations 300
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            300
+Fetch                     Successful requests       300
+Fetch                     Failed requests           0
+Fetch                     Median time per request   625ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 124ms
+
+Time taken for tests      19.4 seconds
+Total requests            300
+Successful requests       300
+Failed requests           0
+Requests per second       15.46 [#/sec]
+Median time per request   625ms
+Average time per request  632ms
+Sample standard deviation 124ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=20
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   638ms
+Fetch                     Average time per request  637ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.4 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.89 [#/sec]
+Median time per request   638ms
+Average time per request  637ms
+Sample standard deviation 114ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.5 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.80 [#/sec]
+Median time per request   631ms
+Average time per request  635ms
+Sample standard deviation 114ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   636ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 118ms
+
+Time taken for tests      19.7 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.41 [#/sec]
+Median time per request   636ms
+Average time per request  635ms
+Sample standard deviation 118ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   626ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.05 [#/sec]
+Median time per request   626ms
+Average time per request  630ms
+Sample standard deviation 110ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.15 [#/sec]
+Median time per request   629ms
+Average time per request  630ms
+Sample standard deviation 111ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=20
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   625ms
+Fetch                     Average time per request  628ms
+Fetch                     Sample standard deviation 109ms
+
+Time taken for tests      19.2 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.25 [#/sec]
+Median time per request   625ms
+Average time per request  628ms
+Sample standard deviation 109ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   618ms
+Fetch                     Average time per request  620ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      18.9 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.72 [#/sec]
+Median time per request   618ms
+Average time per request  620ms
+Sample standard deviation 111ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.5 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.78 [#/sec]
+Median time per request   627ms
+Average time per request  634ms
+Sample standard deviation 113ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.4 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.94 [#/sec]
+Median time per request   628ms
+Average time per request  631ms
+Sample standard deviation 110ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   619ms
+Fetch                     Average time per request  627ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.2 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.21 [#/sec]
+Median time per request   619ms
+Average time per request  627ms
+Sample standard deviation 115ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=20
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   641ms
+Fetch                     Average time per request  642ms
+Fetch                     Sample standard deviation 104ms
+
+Time taken for tests      19.7 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.38 [#/sec]
+Median time per request   641ms
+Average time per request  642ms
+Sample standard deviation 104ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  625ms
+Fetch                     Sample standard deviation 108ms
+
+Time taken for tests      19.1 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.43 [#/sec]
+Median time per request   623ms
+Average time per request  625ms
+Sample standard deviation 108ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   621ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 116ms
+
+Time taken for tests      19.4 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.86 [#/sec]
+Median time per request   621ms
+Average time per request  629ms
+Sample standard deviation 116ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  639ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.6 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.60 [#/sec]
+Median time per request   631ms
+Average time per request  639ms
+Sample standard deviation 115ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.06 [#/sec]
+Median time per request   623ms
+Average time per request  629ms
+Sample standard deviation 113ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=20
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   620ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.10 [#/sec]
+Median time per request   620ms
+Average time per request  632ms
+Sample standard deviation 113ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.2 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.33 [#/sec]
+Median time per request   631ms
+Average time per request  630ms
+Sample standard deviation 114ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.4 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.93 [#/sec]
+Median time per request   623ms
+Average time per request  630ms
+Sample standard deviation 110ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 117ms
+
+Time taken for tests      19.2 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.27 [#/sec]
+Median time per request   628ms
+Average time per request  630ms
+Sample standard deviation 117ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.14 [#/sec]
+Median time per request   623ms
+Average time per request  631ms
+Sample standard deviation 115ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=20
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.01 [#/sec]
+Median time per request   630ms
+Average time per request  634ms
+Sample standard deviation 115ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 109ms
+
+Time taken for tests      19.3 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       31.14 [#/sec]
+Median time per request   631ms
+Average time per request  629ms
+Sample standard deviation 109ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.4 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.99 [#/sec]
+Median time per request   628ms
+Average time per request  632ms
+Sample standard deviation 111ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 108ms
+
+Time taken for tests      19.4 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.95 [#/sec]
+Median time per request   627ms
+Average time per request  629ms
+Sample standard deviation 108ms
+export CONCURRENCY=20 ITERATIONS=600 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 20
+Iterations 600
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            600
+Fetch                     Successful requests       600
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  640ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.5 seconds
+Total requests            600
+Successful requests       600
+Failed requests           0
+Requests per second       30.75 [#/sec]
+Median time per request   631ms
+Average time per request  640ms
+Sample standard deviation 111ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=50
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.5 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       76.89 [#/sec]
+Median time per request   627ms
+Average time per request  632ms
+Sample standard deviation 114ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   634ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.6 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       76.42 [#/sec]
+Median time per request   634ms
+Average time per request  634ms
+Sample standard deviation 115ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.6 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       76.47 [#/sec]
+Median time per request   632ms
+Average time per request  635ms
+Sample standard deviation 115ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.84 [#/sec]
+Median time per request   627ms
+Average time per request  630ms
+Sample standard deviation 112ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.78 [#/sec]
+Median time per request   623ms
+Average time per request  629ms
+Sample standard deviation 112ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=50
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.18 [#/sec]
+Median time per request   631ms
+Average time per request  630ms
+Sample standard deviation 110ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   626ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.82 [#/sec]
+Median time per request   626ms
+Average time per request  632ms
+Sample standard deviation 111ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.41 [#/sec]
+Median time per request   623ms
+Average time per request  631ms
+Sample standard deviation 112ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   622ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.73 [#/sec]
+Median time per request   622ms
+Average time per request  629ms
+Sample standard deviation 112ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   623ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.5 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       76.74 [#/sec]
+Median time per request   623ms
+Average time per request  631ms
+Sample standard deviation 111ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=50
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   626ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.34 [#/sec]
+Median time per request   626ms
+Average time per request  630ms
+Sample standard deviation 112ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   621ms
+Fetch                     Average time per request  626ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.2 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       78.01 [#/sec]
+Median time per request   621ms
+Average time per request  626ms
+Sample standard deviation 111ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 116ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.63 [#/sec]
+Median time per request   627ms
+Average time per request  631ms
+Sample standard deviation 116ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.47 [#/sec]
+Median time per request   627ms
+Average time per request  629ms
+Sample standard deviation 114ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.55 [#/sec]
+Median time per request   629ms
+Average time per request  630ms
+Sample standard deviation 110ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=50
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.5 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       76.89 [#/sec]
+Median time per request   628ms
+Average time per request  632ms
+Sample standard deviation 110ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   624ms
+Fetch                     Average time per request  628ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.3 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.85 [#/sec]
+Median time per request   624ms
+Average time per request  628ms
+Sample standard deviation 115ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   633ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.27 [#/sec]
+Median time per request   633ms
+Average time per request  633ms
+Sample standard deviation 113ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   634ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.6 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       76.71 [#/sec]
+Median time per request   634ms
+Average time per request  635ms
+Sample standard deviation 115ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.39 [#/sec]
+Median time per request   631ms
+Average time per request  634ms
+Sample standard deviation 111ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=50
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.18 [#/sec]
+Median time per request   629ms
+Average time per request  635ms
+Sample standard deviation 114ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   618ms
+Fetch                     Average time per request  622ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.1 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       78.38 [#/sec]
+Median time per request   618ms
+Average time per request  622ms
+Sample standard deviation 111ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 110ms
+
+Time taken for tests      19.2 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       78.02 [#/sec]
+Median time per request   627ms
+Average time per request  629ms
+Sample standard deviation 110ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 117ms
+
+Time taken for tests      19.4 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.26 [#/sec]
+Median time per request   627ms
+Average time per request  633ms
+Sample standard deviation 117ms
+export CONCURRENCY=50 ITERATIONS=1500 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 50
+Iterations 1500
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            1500
+Fetch                     Successful requests       1500
+Fetch                     Failed requests           0
+Fetch                     Median time per request   625ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 117ms
+
+Time taken for tests      19.5 seconds
+Total requests            1500
+Successful requests       1500
+Failed requests           0
+Requests per second       77.06 [#/sec]
+Median time per request   625ms
+Average time per request  630ms
+Sample standard deviation 117ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=100
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.5 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       153.66 [#/sec]
+Median time per request   631ms
+Average time per request  633ms
+Sample standard deviation 115ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   634ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.6 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       152.97 [#/sec]
+Median time per request   634ms
+Average time per request  635ms
+Sample standard deviation 114ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 116ms
+
+Time taken for tests      19.5 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       153.69 [#/sec]
+Median time per request   628ms
+Average time per request  632ms
+Sample standard deviation 116ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.38 [#/sec]
+Median time per request   629ms
+Average time per request  631ms
+Sample standard deviation 112ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.54 [#/sec]
+Median time per request   627ms
+Average time per request  631ms
+Sample standard deviation 113ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=100
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.3 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       155.14 [#/sec]
+Median time per request   627ms
+Average time per request  630ms
+Sample standard deviation 112ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   626ms
+Fetch                     Average time per request  629ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.53 [#/sec]
+Median time per request   626ms
+Average time per request  629ms
+Sample standard deviation 113ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  638ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.7 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       152.53 [#/sec]
+Median time per request   632ms
+Average time per request  638ms
+Sample standard deviation 115ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.8 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       151.88 [#/sec]
+Median time per request   630ms
+Average time per request  634ms
+Sample standard deviation 114ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  632ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       155.02 [#/sec]
+Median time per request   628ms
+Average time per request  632ms
+Sample standard deviation 111ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=100
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.5 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       153.49 [#/sec]
+Median time per request   630ms
+Average time per request  634ms
+Sample standard deviation 114ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   626ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.45 [#/sec]
+Median time per request   626ms
+Average time per request  631ms
+Sample standard deviation 114ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 112ms
+
+Time taken for tests      19.6 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       153.35 [#/sec]
+Median time per request   629ms
+Average time per request  635ms
+Sample standard deviation 112ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.52 [#/sec]
+Median time per request   630ms
+Average time per request  634ms
+Sample standard deviation 113ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.6 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       152.75 [#/sec]
+Median time per request   632ms
+Average time per request  634ms
+Sample standard deviation 111ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=100
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 109ms
+
+Time taken for tests      19.3 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       155.14 [#/sec]
+Median time per request   628ms
+Average time per request  630ms
+Sample standard deviation 109ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   626ms
+Fetch                     Average time per request  630ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.3 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       155.19 [#/sec]
+Median time per request   626ms
+Average time per request  630ms
+Sample standard deviation 113ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  637ms
+Fetch                     Sample standard deviation 118ms
+
+Time taken for tests      19.6 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       152.99 [#/sec]
+Median time per request   632ms
+Average time per request  637ms
+Sample standard deviation 118ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.6 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       152.88 [#/sec]
+Median time per request   631ms
+Average time per request  634ms
+Sample standard deviation 113ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  637ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.7 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       152.14 [#/sec]
+Median time per request   631ms
+Average time per request  637ms
+Sample standard deviation 113ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=100
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.26 [#/sec]
+Median time per request   632ms
+Average time per request  634ms
+Sample standard deviation 115ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   625ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.90 [#/sec]
+Median time per request   625ms
+Average time per request  631ms
+Sample standard deviation 113ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 115ms
+
+Time taken for tests      19.5 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.02 [#/sec]
+Median time per request   628ms
+Average time per request  633ms
+Sample standard deviation 115ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 111ms
+
+Time taken for tests      19.4 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       154.92 [#/sec]
+Median time per request   627ms
+Average time per request  631ms
+Sample standard deviation 111ms
+export CONCURRENCY=100 ITERATIONS=3000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 100
+Iterations 3000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            3000
+Fetch                     Successful requests       3000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   633ms
+Fetch                     Average time per request  636ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.6 seconds
+Total requests            3000
+Successful requests       3000
+Failed requests           0
+Requests per second       153.02 [#/sec]
+Median time per request   633ms
+Average time per request  636ms
+Sample standard deviation 114ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=200
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1000ms
+Fetch                     Average time per request  1001ms
+Fetch                     Sample standard deviation 123ms
+
+Time taken for tests      30.8 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       194.70 [#/sec]
+Median time per request   1000ms
+Average time per request  1001ms
+Sample standard deviation 123ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   631ms
+Fetch                     Average time per request  637ms
+Fetch                     Sample standard deviation 121ms
+
+Time taken for tests      19.7 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       305.11 [#/sec]
+Median time per request   631ms
+Average time per request  637ms
+Sample standard deviation 121ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   684ms
+Fetch                     Average time per request  812ms
+Fetch                     Sample standard deviation 333ms
+
+Time taken for tests      25.0 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       239.81 [#/sec]
+Median time per request   684ms
+Average time per request  812ms
+Sample standard deviation 333ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 116ms
+
+Time taken for tests      19.5 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       307.61 [#/sec]
+Median time per request   628ms
+Average time per request  634ms
+Sample standard deviation 116ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   703ms
+Fetch                     Average time per request  708ms
+Fetch                     Sample standard deviation 124ms
+
+Time taken for tests      21.8 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       275.53 [#/sec]
+Median time per request   703ms
+Average time per request  708ms
+Sample standard deviation 124ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=200
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   999ms
+Fetch                     Average time per request  1001ms
+Fetch                     Sample standard deviation 124ms
+
+Time taken for tests      30.7 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       195.44 [#/sec]
+Median time per request   999ms
+Average time per request  1001ms
+Sample standard deviation 124ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 120ms
+
+Time taken for tests      19.5 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       307.42 [#/sec]
+Median time per request   628ms
+Average time per request  634ms
+Sample standard deviation 120ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   688ms
+Fetch                     Average time per request  817ms
+Fetch                     Sample standard deviation 337ms
+
+Time taken for tests      25.1 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       238.94 [#/sec]
+Median time per request   688ms
+Average time per request  817ms
+Sample standard deviation 337ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  638ms
+Fetch                     Sample standard deviation 118ms
+
+Time taken for tests      19.6 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       305.66 [#/sec]
+Median time per request   632ms
+Average time per request  638ms
+Sample standard deviation 118ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   706ms
+Fetch                     Average time per request  710ms
+Fetch                     Sample standard deviation 127ms
+
+Time taken for tests      21.9 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       273.63 [#/sec]
+Median time per request   706ms
+Average time per request  710ms
+Sample standard deviation 127ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=200
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   996ms
+Fetch                     Average time per request  998ms
+Fetch                     Sample standard deviation 123ms
+
+Time taken for tests      30.6 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       196.30 [#/sec]
+Median time per request   996ms
+Average time per request  998ms
+Sample standard deviation 123ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   628ms
+Fetch                     Average time per request  633ms
+Fetch                     Sample standard deviation 119ms
+
+Time taken for tests      19.5 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       308.36 [#/sec]
+Median time per request   628ms
+Average time per request  633ms
+Sample standard deviation 119ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   687ms
+Fetch                     Average time per request  819ms
+Fetch                     Sample standard deviation 341ms
+
+Time taken for tests      25.3 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       237.59 [#/sec]
+Median time per request   687ms
+Average time per request  819ms
+Sample standard deviation 341ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  634ms
+Fetch                     Sample standard deviation 114ms
+
+Time taken for tests      19.5 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       307.15 [#/sec]
+Median time per request   629ms
+Average time per request  634ms
+Sample standard deviation 114ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   718ms
+Fetch                     Average time per request  722ms
+Fetch                     Sample standard deviation 127ms
+
+Time taken for tests      22.2 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       270.33 [#/sec]
+Median time per request   718ms
+Average time per request  722ms
+Sample standard deviation 127ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=200
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   996ms
+Fetch                     Average time per request  998ms
+Fetch                     Sample standard deviation 124ms
+
+Time taken for tests      30.7 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       195.52 [#/sec]
+Median time per request   996ms
+Average time per request  998ms
+Sample standard deviation 124ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   629ms
+Fetch                     Average time per request  635ms
+Fetch                     Sample standard deviation 118ms
+
+Time taken for tests      19.6 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       306.73 [#/sec]
+Median time per request   629ms
+Average time per request  635ms
+Sample standard deviation 118ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   688ms
+Fetch                     Average time per request  811ms
+Fetch                     Sample standard deviation 331ms
+
+Time taken for tests      25.0 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       240.09 [#/sec]
+Median time per request   688ms
+Average time per request  811ms
+Sample standard deviation 331ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   627ms
+Fetch                     Average time per request  631ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.4 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       309.61 [#/sec]
+Median time per request   627ms
+Average time per request  631ms
+Sample standard deviation 113ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   705ms
+Fetch                     Average time per request  708ms
+Fetch                     Sample standard deviation 125ms
+
+Time taken for tests      21.9 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       274.15 [#/sec]
+Median time per request   705ms
+Average time per request  708ms
+Sample standard deviation 125ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=200
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   996ms
+Fetch                     Average time per request  996ms
+Fetch                     Sample standard deviation 121ms
+
+Time taken for tests      30.5 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       196.45 [#/sec]
+Median time per request   996ms
+Average time per request  996ms
+Sample standard deviation 121ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   630ms
+Fetch                     Average time per request  636ms
+Fetch                     Sample standard deviation 119ms
+
+Time taken for tests      19.7 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       304.94 [#/sec]
+Median time per request   630ms
+Average time per request  636ms
+Sample standard deviation 119ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   688ms
+Fetch                     Average time per request  814ms
+Fetch                     Sample standard deviation 337ms
+
+Time taken for tests      25.1 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       238.83 [#/sec]
+Median time per request   688ms
+Average time per request  814ms
+Sample standard deviation 337ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   632ms
+Fetch                     Average time per request  636ms
+Fetch                     Sample standard deviation 113ms
+
+Time taken for tests      19.6 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       305.72 [#/sec]
+Median time per request   632ms
+Average time per request  636ms
+Sample standard deviation 113ms
+export CONCURRENCY=200 ITERATIONS=6000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 200
+Iterations 6000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            6000
+Fetch                     Successful requests       6000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   702ms
+Fetch                     Average time per request  705ms
+Fetch                     Sample standard deviation 125ms
+
+Time taken for tests      21.6 seconds
+Total requests            6000
+Successful requests       6000
+Failed requests           0
+Requests per second       278.27 [#/sec]
+Median time per request   702ms
+Average time per request  705ms
+Sample standard deviation 125ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=500
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   2487ms
+Fetch                     Average time per request  2472ms
+Fetch                     Sample standard deviation 231ms
+
+Time taken for tests      75.6 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       198.37 [#/sec]
+Median time per request   2487ms
+Average time per request  2472ms
+Sample standard deviation 231ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1495ms
+Fetch                     Average time per request  1495ms
+Fetch                     Sample standard deviation 140ms
+
+Time taken for tests      45.8 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       327.47 [#/sec]
+Median time per request   1495ms
+Average time per request  1495ms
+Sample standard deviation 140ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       13849
+Fetch                     Failed requests           1151
+Fetch                     Median time per request   1194ms
+Fetch                     Average time per request  2470ms
+Fetch                     Sample standard deviation 2543ms
+
+Time taken for tests      77.8 seconds
+Total requests            15000
+Successful requests       13849
+Failed requests           1151
+Requests per second       192.85 [#/sec]
+Median time per request   1194ms
+Average time per request  2470ms
+Sample standard deviation 2543ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       14515
+Fetch                     Failed requests           485
+Fetch                     Median time per request   896ms
+Fetch                     Average time per request  2363ms
+Fetch                     Sample standard deviation 2483ms
+
+Time taken for tests      71.6 seconds
+Total requests            15000
+Successful requests       14515
+Failed requests           485
+Requests per second       209.52 [#/sec]
+Median time per request   896ms
+Average time per request  2363ms
+Sample standard deviation 2483ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1498ms
+Fetch                     Average time per request  1498ms
+Fetch                     Sample standard deviation 264ms
+
+Time taken for tests      45.4 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       330.21 [#/sec]
+Median time per request   1498ms
+Average time per request  1498ms
+Sample standard deviation 264ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=500
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   2484ms
+Fetch                     Average time per request  2474ms
+Fetch                     Sample standard deviation 307ms
+
+Time taken for tests      75.7 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       198.26 [#/sec]
+Median time per request   2484ms
+Average time per request  2474ms
+Sample standard deviation 307ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1497ms
+Fetch                     Average time per request  1496ms
+Fetch                     Sample standard deviation 140ms
+
+Time taken for tests      45.9 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       326.58 [#/sec]
+Median time per request   1497ms
+Average time per request  1496ms
+Sample standard deviation 140ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       13922
+Fetch                     Failed requests           1078
+Fetch                     Median time per request   1258ms
+Fetch                     Average time per request  2496ms
+Fetch                     Sample standard deviation 2473ms
+
+Time taken for tests      84.0 seconds
+Total requests            15000
+Successful requests       13922
+Failed requests           1078
+Requests per second       178.64 [#/sec]
+Median time per request   1258ms
+Average time per request  2496ms
+Sample standard deviation 2473ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       14506
+Fetch                     Failed requests           494
+Fetch                     Median time per request   897ms
+Fetch                     Average time per request  2357ms
+Fetch                     Sample standard deviation 2353ms
+
+Time taken for tests      71.3 seconds
+Total requests            15000
+Successful requests       14506
+Failed requests           494
+Requests per second       210.45 [#/sec]
+Median time per request   897ms
+Average time per request  2357ms
+Sample standard deviation 2353ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1462ms
+Fetch                     Average time per request  1458ms
+Fetch                     Sample standard deviation 248ms
+
+Time taken for tests      44.2 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       339.73 [#/sec]
+Median time per request   1462ms
+Average time per request  1458ms
+Sample standard deviation 248ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=500
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   2498ms
+Fetch                     Average time per request  2481ms
+Fetch                     Sample standard deviation 213ms
+
+Time taken for tests      76.0 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       197.37 [#/sec]
+Median time per request   2498ms
+Average time per request  2481ms
+Sample standard deviation 213ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1499ms
+Fetch                     Average time per request  1497ms
+Fetch                     Sample standard deviation 139ms
+
+Time taken for tests      45.9 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       326.73 [#/sec]
+Median time per request   1499ms
+Average time per request  1497ms
+Sample standard deviation 139ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       13815
+Fetch                     Failed requests           1185
+Fetch                     Median time per request   1259ms
+Fetch                     Average time per request  2470ms
+Fetch                     Sample standard deviation 2527ms
+
+Time taken for tests      76.0 seconds
+Total requests            15000
+Successful requests       13815
+Failed requests           1185
+Requests per second       197.42 [#/sec]
+Median time per request   1259ms
+Average time per request  2470ms
+Sample standard deviation 2527ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       14977
+Fetch                     Failed requests           23
+Fetch                     Median time per request   970ms
+Fetch                     Average time per request  2353ms
+Fetch                     Sample standard deviation 2204ms
+
+Time taken for tests      71.4 seconds
+Total requests            15000
+Successful requests       14977
+Failed requests           23
+Requests per second       210.02 [#/sec]
+Median time per request   970ms
+Average time per request  2353ms
+Sample standard deviation 2204ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1474ms
+Fetch                     Average time per request  1471ms
+Fetch                     Sample standard deviation 254ms
+
+Time taken for tests      44.5 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       336.80 [#/sec]
+Median time per request   1474ms
+Average time per request  1471ms
+Sample standard deviation 254ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=500
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   2494ms
+Fetch                     Average time per request  2480ms
+Fetch                     Sample standard deviation 247ms
+
+Time taken for tests      75.8 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       197.81 [#/sec]
+Median time per request   2494ms
+Average time per request  2480ms
+Sample standard deviation 247ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1498ms
+Fetch                     Average time per request  1498ms
+Fetch                     Sample standard deviation 139ms
+
+Time taken for tests      45.9 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       326.81 [#/sec]
+Median time per request   1498ms
+Average time per request  1498ms
+Sample standard deviation 139ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       13889
+Fetch                     Failed requests           1111
+Fetch                     Median time per request   1231ms
+Fetch                     Average time per request  2487ms
+Fetch                     Sample standard deviation 2536ms
+
+Time taken for tests      81.8 seconds
+Total requests            15000
+Successful requests       13889
+Failed requests           1111
+Requests per second       183.31 [#/sec]
+Median time per request   1231ms
+Average time per request  2487ms
+Sample standard deviation 2536ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       14494
+Fetch                     Failed requests           506
+Fetch                     Median time per request   898ms
+Fetch                     Average time per request  2360ms
+Fetch                     Sample standard deviation 2391ms
+
+Time taken for tests      71.5 seconds
+Total requests            15000
+Successful requests       14494
+Failed requests           506
+Requests per second       209.92 [#/sec]
+Median time per request   898ms
+Average time per request  2360ms
+Sample standard deviation 2391ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1467ms
+Fetch                     Average time per request  1468ms
+Fetch                     Sample standard deviation 254ms
+
+Time taken for tests      44.4 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       337.51 [#/sec]
+Median time per request   1467ms
+Average time per request  1468ms
+Sample standard deviation 254ms
+make[1]: Leaving directory '/benchmarks'
+make default CONCURRENCY=500
+make[1]: Entering directory '/benchmarks'
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-blocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-blocking.api-java-blocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   2489ms
+Fetch                     Average time per request  2480ms
+Fetch                     Sample standard deviation 334ms
+
+Time taken for tests      75.8 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       197.88 [#/sec]
+Median time per request   2489ms
+Average time per request  2480ms
+Sample standard deviation 334ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-java-nonblocking.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-java-nonblocking.api-java-nonblocking
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1495ms
+Fetch                     Average time per request  1493ms
+Fetch                     Sample standard deviation 141ms
+
+Time taken for tests      45.7 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       328.07 [#/sec]
+Median time per request   1495ms
+Average time per request  1493ms
+Sample standard deviation 141ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-node.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-node.api-node
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       13969
+Fetch                     Failed requests           1031
+Fetch                     Median time per request   1283ms
+Fetch                     Average time per request  2501ms
+Fetch                     Sample standard deviation 2442ms
+
+Time taken for tests      80.8 seconds
+Total requests            15000
+Successful requests       13969
+Failed requests           1031
+Requests per second       185.59 [#/sec]
+Median time per request   1283ms
+Average time per request  2501ms
+Sample standard deviation 2442ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-go.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-go.api-go
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       14715
+Fetch                     Failed requests           285
+Fetch                     Median time per request   895ms
+Fetch                     Average time per request  2361ms
+Fetch                     Sample standard deviation 2370ms
+
+Time taken for tests      71.5 seconds
+Total requests            15000
+Successful requests       14715
+Failed requests           285
+Requests per second       209.93 [#/sec]
+Median time per request   895ms
+Average time per request  2361ms
+Sample standard deviation 2370ms
+export CONCURRENCY=500 ITERATIONS=15000 && \
+	drill --stats --quiet --benchmark api-rust.yaml && sleep 10
+Concurrency 500
+Iterations 15000
+Rampup 0
+Base URL http://api-rust.api-rust
+
+
+Fetch                     Total requests            15000
+Fetch                     Successful requests       15000
+Fetch                     Failed requests           0
+Fetch                     Median time per request   1481ms
+Fetch                     Average time per request  1479ms
+Fetch                     Sample standard deviation 248ms
+
+Time taken for tests      44.8 seconds
+Total requests            15000
+Successful requests       15000
+Failed requests           0
+Requests per second       335.17 [#/sec]
+Median time per request   1481ms
+Average time per request  1479ms
+Sample standard deviation 248ms
+make[1]: Leaving directory '/benchmarks'
